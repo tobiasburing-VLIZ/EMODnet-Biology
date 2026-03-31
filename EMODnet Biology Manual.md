@@ -1,27 +1,31 @@
----
 
+Contributing datasets to EMODnet Biology – Manual
+==============
 
----
+Brief overview of EMODnet Biology project, data management, data flow and international connections.
 
-<h1 id="contributing-datasets-to-emodnet-biology-–-manual">Contributing datasets to EMODnet Biology – Manual</h1>
-<p>Brief overview of EMODnet Biology project, data management, data flow and international connections.</p>
-<h1 id="introduction-to-emodnet-and-emodnet-biology">1. Introduction to EMODnet and EMODnet Biology</h1>
-<h2 id="what-is-emodnet-biology">What is EMODnet Biology</h2>
-<p><strong>EMODnet: the European Marine Observation and Data Network</strong></p>
-<p>The European Marine Observation and Data Network (EMODnet) is a network of organisations that work together to observe the sea, process the data according to international standards and make that information freely available as interoperable data layers and data products.</p>
-<p>EMODnet provides access to European marine data across seven discipline-based themes:</p>
+# 1. Introduction to EMODnet and EMODnet Biology
+
+## What is EMODnet Biology
+
+**EMODnet: the European Marine Observation and Data Network**
+
+The European Marine Observation and Data Network (EMODnet) is a network of organisations that work together to observe the sea, process the data according to international standards and make that information freely available as interoperable data layers and data products.
+
+EMODnet provides access to European marine data across seven discipline-based themes:
+
 <table>
-  <tbody><tr>
+  <tr>
 	  <td>
 		  Bathymetry
 	 </td>
-    <td> <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/bathymetry.png?time=1588942317496" alt="1" width="360px" height="360px">
+    <td> <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/bathymetry.png?time=1588942317496"  alt="1" width = 360px height = 360px >
     </td>
   </tr> 
    <tr>
   <td>Biology
   </td>
-	  <td><img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/biology.png" alt="3" width="360px" height="360px">
+	  <td><img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/biology.png" alt="3" width = 360px height = 360px>
 	  </td>
  </tr>
 <tr>
@@ -29,7 +33,7 @@
 	Human Activities
 	</td>
 	 <td>
-	   <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/human_activities.png" align="right" alt="4" width="360px" height="360px">
+	   <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/human_activities.png" align="right" alt="4" width = 360px height = 360px>
 	  </td>
  </tr>
  <tr>
@@ -37,7 +41,7 @@
       Chemistry
       </td>
       <td>
-       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/chemistry.png" align="right" alt="4" width="360px" height="360px">
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/chemistry.png" align="right" alt="4" width = 360px height = 360px>
 	  </td>
  </tr>
 <tr>
@@ -45,7 +49,7 @@
       Geology
       </td>
       <td>
-       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/geology.png" align="right" alt="4" width="360px" height="360px">
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/geology.png" align="right" alt="4" width = 360px height = 360px>
       </td>
 </tr>
 <tr>
@@ -53,7 +57,7 @@
       Physics
       </td>
       <td>
-       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/physics.png" align="right" alt="4" width="360px" height="360px">
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/physics.png" align="right" alt="4" width = 360px height = 360px>
       </td>
 </tr>
 <tr>
@@ -61,139 +65,567 @@
       Seabed Habitats
       </td>
       <td>
-       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/seadbed_habitats.png" align="right" alt="4" width="360px" height="360px">
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/seadbed_habitats.png" align="right" alt="4" width = 360px height = 360px>
       </td>
 </tr>
 <tr>
       <td>
       </td>
       <td>
-       <img src="" align="right" alt="" width="0px" height="0px">
+       <img src="" align="right" alt="" width = 0px height = 0px>
       </td>
       </tr>
-</tbody></table>
-<p>More about EMODnet: <a href="http://www.emodnet.eu/" title="http://www.emodnet.eu/">https://emodnet.ec.europa.eu/en</a></p>
-<h3 id="emodnet-biology-unlocking-european-marine-biodiversity-data">EMODnet Biology: unlocking European Marine Biodiversity Data</h3>
-<p>EMODnet Biology aims to provide a single access point to European Marine Biodiversity Data and Products, by assembling individual datasets from various sources and processing them into interoperable data products for assessing the environmental state of ecosystems and sea basins. It is built upon the World Register of Marine Species and the European Ocean Biodiversity Information System.</p>
-<p><strong>Specific objectives of EMODnet Biology:</strong></p>
-<ul>
-<li>Provide public access to search, download, and viewing tools for data, metadata, and data products of marine species occurring in European marine waters;</li>
-<li>Create specific biological data products to illustrate the temporal and geographic variability of occurrences and abundances of marine algae, benthos, birds, fish, mammals, phytoplankton, reptiles, and zooplankton species, with a priority to develop those required for support management, policy, planning, and education;</li>
-<li>Improve harmonization of differing methodologies and strategies for data management under common protocols, data formats, and quality control procedures (by adopting INSPIRE standards);</li>
-<li>Ensure consistent distribution of data by making use of relevant open web services for various user applications;</li>
-<li>Provide tools for spatial, temporal, and taxonomic queries.</li>
-</ul>
-<p>More about EMODnet Biology:  <a href="http://www.emodnet-biology.eu/" title="http://www.emodnet-biology.eu/">https://emodnet.ec.europa.eu/en/biology</a></p>
-<h3 id="emodnet-biology-data-policy">EMODnet Biology data policy</h3>
-<p>The EMODnet Biology data portal provides free and unrestricted access to data on temporal and spatial distribution of marine species and species traits from all European regional seas.</p>
-<p>The consortia partners should make data available using one of the following 3  Creative Commons licenses.</p>
-<ul>
-<li>CC-0</li>
-<li>CC-BY</li>
-<li>CC-BY-NC</li>
-</ul>
-<p>Learn more: <a href="https://creativecommons.org/licenses/" title="https://creativecommons.org/licenses/">https://creativecommons.org/licenses/</a></p>
-<h3 id="emodnet-biology-data-flow">EMODnet Biology data flow</h3>
-<p>You have read that EMODnet Biology is built upon the European Ocean Biodiversity Information System (EurOBIS), but  <strong>what does that mean?</strong></p>
-<p>The following  <a href="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5051/EMODnetBiology_DataFlow.ppsx?time=1591192574159">presentation</a>  explains how data flows toward EMODnet Biology and how it relates to other biodiversity data systems, such as the Ocean Biodiversity Information System.</p>
-<h2 id="fair-principles-in-emodnet-biology">FAIR Principles in EMODnet Biology</h2>
-<h3 id="fair-principles">FAIR Principles</h3>
-<p>The <a href="http://www.nature.com/articles/sdata201618">FAIR Guiding Principles for scientific data management and stewardship</a>  were first published in 2016 in the  <em>Scientific Data</em>  journal. They put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals.</p>
-<p>The principles apply to both data and metadata and are:</p>
-<ol>
-<li>Findable</li>
-<li>Accessible</li>
-<li>Interoperable</li>
-<li>Reusable</li>
-</ol>
-<p>This  <a href="https://classroom.oceanteacher.org/pluginfile.php/76240/mod_book/chapter/5052/EMODnetBiology_FAIR.ppsx">presentation</a>  briefly introduces these principles but more information can be found in Wilkinson, M., Dumontier, M., Aalbersberg, I.  <em>et al.</em>  The FAIR Guiding Principles for scientific data management and stewardship.  <em>Sci Data</em>  <strong>3,</strong> 160018 (2016).  <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a></p>
-<h3 id="dois-and-orcids">DOIs and ORCIDs</h3>
-<p>EMODnet Biology encourages the use of Digital Object Identifiers (DOI) in datasets. This is however only done when they are requested by the data providers. A DOI is a static, permanent link to the data, allowing it to be citable, and more visible. It also provides evidence for data claims and the citations can contribute to scholarly credit for the data creators. More detailed information can be found in the book “<a href="https://classroom.oceanteacher.org/mod/book/view.php?id=24902">Data harvest and DOIs</a>” under the EMODnet Biology data harvesting section of this course.</p>
-<p>Within EMODnet Biology we also encourage our data providers to use Open Researcher and Contributor Identifier (<a href="https://orcid.org/">ORCID)</a>  as it is persistent, unique digital identifier used to disambiguate researchers from one another.</p>
-<p>You might have noticed that an increasing number of journals and publishing companies are requesting DOIs and ORCIDs when submitting documents for publication.</p>
-<h2 id="emodnet-biology-data-management">EMODnet Biology data management</h2>
-<h3 id="overview-of-emodnet-biology-data-management-process">Overview of EMODnet Biology data management process</h3>
-<p>EMODnet Biology’s data management is composed by three main steps:</p>
-<ul>
-<li>Data description</li>
-<li>Data processing</li>
-<li>Data publication</li>
-</ul>
-<p><img src="https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5054/Data_management.PNG" alt="Data_management"></p>
-<h3 id="dataset-description-metadata">Dataset description: metadata</h3>
-<p>There are many advantages to providing good metadata:</p>
-<ul>
-<li>It is necessary to make sure your dataset can be found (discoverability)</li>
-<li>It is needed to indicate the origin of the dataset and who to contact</li>
-<li>It makes your dataset easy to use and understand</li>
-<li>It helps potential users to decide whether the dataset is useful or not without the need to download it first</li>
-<li>It informs potential users of data restrictions</li>
-<li>It informs on how potential users are to cite the dataset upon use in publications</li>
-</ul>
-<p>In EMODnet Biology we keep a  <a href="http://www.emodnet-biology.eu/data-catalog?module=dataset&amp;show=search">catalogue</a> with metadata records for all the datasets, including those available through the portal and those not yet available.</p>
-<p>Later on in the course, you will learn more about how to provide good-quality metadata.</p>
-<h3 id="data-processing-formatting-the-data-according-to-emodnet-biology-obis-standards-i">Data processing: formatting the data according to EMODnet Biology (OBIS) standards (I)</h3>
-<p>Both EMODnet Biology and OBIS (and GBIF) rely on  Darwin Core Archive (DwC-A), the standard for publishing biodiversity data. This standard determines the way the data will be structured (i.e. number of tables we need to provide), and the number, name, and content of the fields for each of these tables.</p>
-<p>EMODnet Biology and OBIS, unlike GBIF, also use the BODC vocabularies to standardize parameters not covered by DwC. These vocabularies are part of one of DwC’s extensions, the DwC OBIS-ENV format.</p>
-<p><img src="https://www.explainxkcd.com/wiki/images/6/60/standards.png" alt="Fortunately, the charging one has been solved now that we've all standardized on mini-USB. Or is it micro-USB? Shit."><br>
-(by <a href="https://xkcd.com/">xkcd</a>)</p>
-<h3 id="data-processing-formatting-the-data-according-to-emodnet-biology-obis-standards-ii">Data processing: formatting the data according to EMODnet Biology (OBIS) standards (II)</h3>
-<p>We can think of the data processing as three main blocks, each of them with their own specific characteristics:</p>
-<ul>
-<li><strong>Data structure</strong>: the conceptual data model of the Darwin Core Archive is a “<a href="https://image.slidesharecdn.com/day4agbifiptv5modified-160713085446/95/gbif-bifa-mentoring-day-4a-gbif-ipt-july-2016-6-638.jpg?cb=1468400139">star schema</a>” with a core table in the center of the star and extension tables radiating out of the center. In practice, EMODnet Biology and OBIS use a subset of 1 to 3 tables to represent the data. In most cases, we will use the three tables.
-<ul>
-<li>Event (core) table: to store sample and/or observation information (time, location, depth, event hierarchy).</li>
-<li>Occurrence table: to store occurrence details (taxonomy, identification, organismID).</li>
-<li>Extended Measurements or Facts (eMoF) table: to store sampling information and additional biological and/or abiotic measurements.</li>
-</ul>
-</li>
-<li><strong>Field nomenclature</strong>: the field names of each of the 3 tables have to follow the Darwin Core  <a href="http://rs.tdwg.org/dwc/terms/index.htm#occurrenceindex">terminology</a>. There is a minimum number of fields required per table.</li>
-<li><strong>Content</strong>: besides the field names, the content, or the data itself, has to follow certain standards. For example, the date-related fields have to be ISO 8601 compliant.</li>
-</ul>
-<p><img src="https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5057/processing_blocks.PNG" alt=""></p>
-<p>Later in the course each of these blocks will be explained in detail with exercises.</p>
-<h3 id="data-processing-structure-of-the-data">Data processing: structure of the data</h3>
-<p>Marine biological data often includes measurements related to habitat features, such as physical and chemical variables of the environment, and biotic measurements (such as body size, counts, abundance and biomass, etc) as well as details regarding the nature of the sampling or observation methods, equipment and sampling effort. In order to capture all this information, EMODnet Biology and OBIS make use of three tables of the DwC star schema.</p>
-<p>In this case, the sampling event (Event table) is the central entity, which is linked to two extensions: the Occurrence and eMoF (extended Measurements or Facts) tables. This schema is often referred to as  <a href="http://www.obis.org/manual/dataformat/">OBIS Event Core or OBIS-ENV</a>.</p>
-<p>The three tables are related via the eventID and the occurrenceID.</p>
-<ul>
-<li>The eMoF table is used in combination with the Event Core and the Occurrence table to capture sampling information, abiotic and biotic measurements</li>
-<li>The occurrenceID is used to link biotic measurements in the eMoF table with the Occurrence table</li>
-<li>The eventID links the eMoF table to the Event Core</li>
-</ul>
-<p><img src="https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5058/event_core.PNG" alt=""></p>
-<h3 id="data-processing-field-nomenclature">Data processing: field nomenclature</h3>
-<p>The field names of each of the 3 tables have to follow the  <a href="http://rs.tdwg.org/dwc/terms/index.htm#occurrenceindex">Darwin Core terminology</a>. There are many DwC terms but not all of them are required for EMODnet Biology. In the “Data processing” book the section “<a href="https://classroom.oceanteacher.org/mod/book/view.php?id=24869&amp;chapterid=5070">Most relevant DwC terms</a>” provides detailed information on the terms used in each table.</p>
-<h3 id="data-processing-content-standards">Data processing: content standards</h3>
-<p>As was mentioned before, the content or the data itself has to follow certain standards and use certain vocabularies. Here are some examples:</p>
-<ul>
-<li>Date-related fields have to be  <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>  compliant: e.g. 2018-03-02 [YYYY-MM-DD]</li>
-<li>Latitude and longitude have to be in decimal degrees and referenced to the WGS84 datum</li>
-</ul>
-<p>An overview of the required format for the content of the different fields is available  <a href="http://www.eurobis.org/data_formats">here</a>.</p>
-<p>Later on in the course, you will learn how to populate the fields that require a specific format:</p>
-<ul>
-<li>
-<p>EventID and OccurrenceID.</p>
-</li>
-<li>
-<p>Taxonomic information:  <a href="https://en.wikipedia.org/wiki/LSID">LSID</a></p>
-<ul>
-<li><strong><strong>Gadus morhua</strong></strong> standardized to:  urn:lsid:marinespecies.org:taxname:322691</li>
-</ul>
-</li>
-<li>
-<p>Other parameters (eMoF table):  <a href="https://www.bodc.ac.uk/resources/products/web_services/vocab/">BODC-NERC controlled vocabulary</a>.</p>
-<ul>
-<li>Biomass per g dry weight; dry weight biomass; biomass (g dry weight); etc… can be standardized to:  Dry weight biomass (in assayed sample) of biological entity specified elsewhere (<a href="http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/">http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/)</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="data-publication">Data publication</h3>
-<p>Once your dataset fully complies with the EMODnet Biology standards, the next step will be to publish it. If you remember the EMODnet Biology data flow, the dataset will be first published in EurOBIS, from where it will flow to EMODnet Biology, LifeWatch, OBIS, and, finally GBIF.</p>
-<p>There are different options available to get your data published in EMODnet Biology. The preferred option is to set an IPT instance (Integrated Publishing Toolkit), an open-source software tool that is used to publish and share biodiversity datasets through the GBIF network. There is a specific module on the course about publishing your data with IPT.</p>
-<h5 id="dois">DOIs</h5>
-<p>Another aspect you might consider is to assign a DOI to your dataset. To meet the growing demand for dataset <strong>traceability</strong> and <strong>citability</strong>, VLIZ collaborates with <a href="https://datacite.org/"><strong>DataCite</strong></a> to provide the scientific community the opportunity to formally publish their datasets by assigning <strong>Digital Object Identifiers</strong> (DOIs).</p>
-<p>Learn more about why and how to assign a DOI to your dataset  <a href="http://www.vliz.be/en/publish">here</a>.</p>
-<h1 id="metadata">2. Metadata</h1>
+</table>
 
+More about EMODnet: [https://emodnet.ec.europa.eu/en](http://www.emodnet.eu/ "http://www.emodnet.eu/")
+
+### EMODnet Biology: unlocking European Marine Biodiversity Data
+
+EMODnet Biology aims to provide a single access point to European Marine Biodiversity Data and Products, by assembling individual datasets from various sources and processing them into interoperable data products for assessing the environmental state of ecosystems and sea basins. It is built upon the World Register of Marine Species and the European Ocean Biodiversity Information System.
+
+**Specific objectives of EMODnet Biology:**
+
+-   Provide public access to search, download, and viewing tools for data, metadata, and data products of marine species occurring in European marine waters;
+-   Create specific biological data products to illustrate the temporal and geographic variability of occurrences and abundances of marine algae, benthos, birds, fish, mammals, phytoplankton, reptiles, and zooplankton species, with a priority to develop those required for support management, policy, planning, and education;
+-   Improve harmonization of differing methodologies and strategies for data management under common protocols, data formats, and quality control procedures (by adopting INSPIRE standards);
+-   Ensure consistent distribution of data by making use of relevant open web services for various user applications;
+-   Provide tools for spatial, temporal, and taxonomic queries.
+
+More about EMODnet Biology:  [https://emodnet.ec.europa.eu/en/biology](http://www.emodnet-biology.eu/ "http://www.emodnet-biology.eu/")
+
+
+### EMODnet Biology data policy
+
+The EMODnet Biology data portal provides free and unrestricted access to data on temporal and spatial distribution of marine species and species traits from all European regional seas.
+
+The consortia partners should make data available using one of the following 3  Creative Commons licenses.  
+
+-   CC-0
+-   CC-BY
+-   CC-BY-NC
+
+Learn more: [https://creativecommons.org/licenses/](https://creativecommons.org/licenses/ "https://creativecommons.org/licenses/")
+
+### EMODnet Biology data flow
+
+You have read that EMODnet Biology is built upon the European Ocean Biodiversity Information System (EurOBIS), but  **what does that mean?**
+
+The following  [presentation](https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5051/EMODnetBiology_DataFlow.ppsx?time=1591192574159)  explains how data flows toward EMODnet Biology and how it relates to other biodiversity data systems, such as the Ocean Biodiversity Information System.
+
+
+## FAIR Principles in EMODnet Biology
+
+### FAIR Principles
+
+The [FAIR Guiding Principles for scientific data management and stewardship](http://www.nature.com/articles/sdata201618)  were first published in 2016 in the  _Scientific Data_  journal. They put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals.
+
+The principles apply to both data and metadata and are:
+
+1.  Findable
+2.  Accessible
+3.  Interoperable
+4.  Reusable
+
+This  [presentation](https://classroom.oceanteacher.org/pluginfile.php/76240/mod_book/chapter/5052/EMODnetBiology_FAIR.ppsx)  briefly introduces these principles but more information can be found in Wilkinson, M., Dumontier, M., Aalbersberg, I.  _et al._  The FAIR Guiding Principles for scientific data management and stewardship.  _Sci Data_  **3,** 160018 (2016).  [https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
+
+### DOIs and ORCIDs
+
+EMODnet Biology encourages the use of Digital Object Identifiers (DOI) in datasets. This is however only done when they are requested by the data providers. A DOI is a static, permanent link to the data, allowing it to be citable, and more visible. It also provides evidence for data claims and the citations can contribute to scholarly credit for the data creators. More detailed information can be found in the book "[Data harvest and DOIs](https://classroom.oceanteacher.org/mod/book/view.php?id=24902)" under the EMODnet Biology data harvesting section of this course.
+
+Within EMODnet Biology we also encourage our data providers to use Open Researcher and Contributor Identifier ([ORCID)](https://orcid.org/)  as it is persistent, unique digital identifier used to disambiguate researchers from one another.
+
+You might have noticed that an increasing number of journals and publishing companies are requesting DOIs and ORCIDs when submitting documents for publication.
+
+## EMODnet Biology data management
+### Overview of EMODnet Biology data management process
+
+EMODnet Biology's data management is composed by three main steps:
+
+-   Data description
+-   Data processing
+-   Data publication
+
+![Data_management](https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5054/Data_management.PNG)
+
+### Dataset description: metadata
+
+There are many advantages to providing good metadata:
+
+-   It is necessary to make sure your dataset can be found (discoverability)
+-   It is needed to indicate the origin of the dataset and who to contact
+-   It makes your dataset easy to use and understand
+-   It helps potential users to decide whether the dataset is useful or not without the need to download it first
+-   It informs potential users of data restrictions
+-   It informs on how potential users are to cite the dataset upon use in publications
+
+In EMODnet Biology we keep a  [catalogue](http://www.emodnet-biology.eu/data-catalog?module=dataset&show=search) with metadata records for all the datasets, including those available through the portal and those not yet available.
+
+Later on in the course, you will learn more about how to provide good-quality metadata.
+### Data processing: formatting the data according to EMODnet Biology (OBIS) standards (I)
+
+Both EMODnet Biology and OBIS (and GBIF) rely on  Darwin Core Archive (DwC-A), the standard for publishing biodiversity data. This standard determines the way the data will be structured (i.e. number of tables we need to provide), and the number, name, and content of the fields for each of these tables.
+
+EMODnet Biology and OBIS, unlike GBIF, also use the BODC vocabularies to standardize parameters not covered by DwC. These vocabularies are part of one of DwC's extensions, the DwC OBIS-ENV format.  
+
+![Fortunately, the charging one has been solved now that we've all standardized on mini-USB. Or is it micro-USB? Shit.](https://www.explainxkcd.com/wiki/images/6/60/standards.png)
+(by [xkcd](https://xkcd.com/))
+### Data processing: formatting the data according to EMODnet Biology (OBIS) standards (II)
+
+We can think of the data processing as three main blocks, each of them with their own specific characteristics:
+
+-   **Data structure**: the conceptual data model of the Darwin Core Archive is a “[star schema](https://image.slidesharecdn.com/day4agbifiptv5modified-160713085446/95/gbif-bifa-mentoring-day-4a-gbif-ipt-july-2016-6-638.jpg?cb=1468400139)” with a core table in the center of the star and extension tables radiating out of the center. In practice, EMODnet Biology and OBIS use a subset of 1 to 3 tables to represent the data. In most cases, we will use the three tables.
+    -   Event (core) table: to store sample and/or observation information (time, location, depth, event hierarchy).
+    -   Occurrence table: to store occurrence details (taxonomy, identification, organismID).
+    -   Extended Measurements or Facts (eMoF) table: to store sampling information and additional biological and/or abiotic measurements.
+-   **Field nomenclature**: the field names of each of the 3 tables have to follow the Darwin Core  [terminology](http://rs.tdwg.org/dwc/terms/index.htm#occurrenceindex). There is a minimum number of fields required per table.
+-   **Content**: besides the field names, the content, or the data itself, has to follow certain standards. For example, the date-related fields have to be ISO 8601 compliant.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5057/processing_blocks.PNG)
+
+Later in the course each of these blocks will be explained in detail with exercises.
+
+### Data processing: structure of the data
+
+Marine biological data often includes measurements related to habitat features, such as physical and chemical variables of the environment, and biotic measurements (such as body size, counts, abundance and biomass, etc) as well as details regarding the nature of the sampling or observation methods, equipment and sampling effort. In order to capture all this information, EMODnet Biology and OBIS make use of three tables of the DwC star schema.
+
+In this case, the sampling event (Event table) is the central entity, which is linked to two extensions: the Occurrence and eMoF (extended Measurements or Facts) tables. This schema is often referred to as  [OBIS Event Core or OBIS-ENV](http://www.obis.org/manual/dataformat/).
+
+The three tables are related via the eventID and the occurrenceID.
+
+-   The eMoF table is used in combination with the Event Core and the Occurrence table to capture sampling information, abiotic and biotic measurements
+-   The occurrenceID is used to link biotic measurements in the eMoF table with the Occurrence table
+-   The eventID links the eMoF table to the Event Core
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5058/event_core.PNG)
+
+### Data processing: field nomenclature
+
+The field names of each of the 3 tables have to follow the  [Darwin Core terminology](http://rs.tdwg.org/dwc/terms/index.htm#occurrenceindex). There are many DwC terms but not all of them are required for EMODnet Biology. In the "Data processing" book the section "[Most relevant DwC terms](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070)" provides detailed information on the terms used in each table.
+
+### Data processing: content standards
+
+As was mentioned before, the content or the data itself has to follow certain standards and use certain vocabularies. Here are some examples:
+
+-   Date-related fields have to be  [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)  compliant: e.g. 2018-03-02 [YYYY-MM-DD]
+-   Latitude and longitude have to be in decimal degrees and referenced to the WGS84 datum
+
+An overview of the required format for the content of the different fields is available  [here](http://www.eurobis.org/data_formats).
+
+Later on in the course, you will learn how to populate the fields that require a specific format:
+
+-   EventID and OccurrenceID.
+    
+-   Taxonomic information:  [LSID](https://en.wikipedia.org/wiki/LSID)
+    
+    -   ____Gadus morhua____ standardized to:  urn:lsid:marinespecies.org:taxname:322691  
+        
+
+-   Other parameters (eMoF table):  [BODC-NERC controlled vocabulary](https://www.bodc.ac.uk/resources/products/web_services/vocab/).
+    
+    -   Biomass per g dry weight; dry weight biomass; biomass (g dry weight); etc... can be standardized to:  Dry weight biomass (in assayed sample) of biological entity specified elsewhere ([http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/)](http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/)
+### Data publication
+
+Once your dataset fully complies with the EMODnet Biology standards, the next step will be to publish it. If you remember the EMODnet Biology data flow, the dataset will be first published in EurOBIS, from where it will flow to EMODnet Biology, LifeWatch, OBIS, and, finally GBIF.
+
+There are different options available to get your data published in EMODnet Biology. The preferred option is to set an IPT instance (Integrated Publishing Toolkit), an open-source software tool that is used to publish and share biodiversity datasets through the GBIF network. There is a specific module on the course about publishing your data with IPT.
+
+##### DOIs
+
+Another aspect you might consider is to assign a DOI to your dataset. To meet the growing demand for dataset **traceability** and **citability**, VLIZ collaborates with [**DataCite**](https://datacite.org/) to provide the scientific community the opportunity to formally publish their datasets by assigning **Digital Object Identifiers** (DOIs).
+
+Learn more about why and how to assign a DOI to your dataset  [here](http://www.vliz.be/en/publish).
+
+# 2. Metadata
+## Metadata in EMODnet Biology
+### Introduction to metadata
+
+Metadata is often defined as data about the data. It means describing your datasets in a structured way so that your data can be found and understood. EMODnet Biology considers receiving good metadata essential for the following reasons:
+
+-   Metadata facilitates data reuse and sharing: it ensures data are more easily interpreted, analysed, and processed by the data originator and others. Missing relevant metadata hinders the use of the data. It also enables datasets that were designed for a single purpose to be reused for other purposes
+-   Metadata is a way of organising electronic resources, making them discoverable
+-   Metadata is essential for interoperability: it enables understanding of the data by humans and machines
+
+In EMODnet Biology we keep a  [catalogue](http://www.emodnet-biology.eu/data-catalog?module=dataset&show=search) with metadata records for all the datasets available through the portal and some that are not yet available.
+### The EMODnet Biology Catalogue
+
+All EMODnet Biology datasets are described in the  [EMODnet Biology Catalogue](https://www.eurobis.org/imis?module=dataset&extfrm=1). The catalogue is part of a larger metadata system, the Integrated Marine Information System ([IMIS](http://www.vliz.be/en/integrated-marine-information-system)). As IMIS is hosted by Flanders Marine Institute (VLIZ), it is focused on Flanders and supplemented by the scientific output of projects involving VLIZ. It contains metadata about all people, institutes, publications, projects, and datasets that are about or involved in marine science and links these different modules together.
+
+This means that if you want to submit a dataset to EMODnet Biology, the following metadata records will need to be created in the EMODnet Catalogue:
+
+-   A  **dataset**  metadata record: A record containing all the metadata for your dataset. When the data have been made available this record will include a link to where the data can be downloaded from. For example:  [https://www.eurobis.org/imis?module=dataset&dasid=4355](https://www.eurobis.org/imis?module=dataset&dasid=4355)  
+    
+-   Metadata records for all  **people**  who contributed to the dataset and should be  acknowledged  in the metadata record. For example:  [https://www.vliz.be/en/imis?module=person&persid=7528](https://www.vliz.be/en/imis?module=person&persid=7528)
+-   Metadata records for all  **institutes**  who contributed to the dataset and should be  acknowledged  in the metadata record. For example:  [http://www.vliz.be/en/data-catalog?module=institute&insid=36](https://www.vliz.be/en/imis?module=institute&insid=36)
+-   Metadata records for all  **publications** based on or describing the dataset. For example:  [https://www.vliz.be/en/imis?module=ref&refid=243062](https://www.vliz.be/en/imis?module=ref&refid=243062)
+
+Please note that all these records are interlinked, which allows for easy discovery of the scientific output of an institute or a data provider.
+
+#### Creating and editing EMODnet catalogue records
+
+The content of the EMODnet catalogue is managed and edited solely by the EMODnet Data management team. To create a dataset record in the EMODnet catalogue, we require you to fill in this  [excel template file](https://classroom.oceanteacher.org/pluginfile.php/76244/mod_book/chapter/5063/Emodnet_Metadata_Template.xlsx?time=1591193709544)  and email it to  [bio@emodnet-biology.eu](mailto:b%69o@e%6d%6f%64n%65%74-%62i%6f%6c%6f%67%79.eu).
+
+If you find an error in your metadata record, you can report these to us directly through the  [ report an error in this record ]  button at the top of each metatada record, or via email to  [bio@emodnet-biology.eu](mailto:%62%69%6f@%65%6d%6f%64%6e%65%74-%62i%6f%6co%67%79.%65%75).
+### Best metadata practices (I)
+
+Good metadata should help the user to find the data and understand what the data are, thus we encourage that it is as complete as possible. Here is an overview of what information is mandatory, highly recommended, and optional for the EMODnet Biology metadata:
+
+| Field | Requirement |  
+| ----------- | ----------- |  
+| Person providing the metadata: name, institute, email | **Mandatory**	 |  
+| Dataset title in English | **Mandatory** |
+| Dataset title in original language (and language) | Optional |
+| Contact person for the dataset: name, institute, email | **Mandatory** |
+| Data creator(s): (name), institute | **Mandatory** |
+| Other person(s) associated with the dataset | Highly recommended |
+| Dataset citation | **Mandatory** |
+| License or terms of use | **Mandatory** |
+| Abstract | **Mandatory** |
+| Extended description | Highly recommended |
+| Geographical coverage | **Mandatory** |
+| Temporal coverage | **Mandatory** |
+| Taxonomic coverage | **Mandatory** |
+| Themes | **Mandatory** |
+| Keywords | Optional |
+| Websites | Optional |
+| Publications related to the dataset | Highly recommended
+
+The next page provides an explanation of what is expected in the mandatory fields. This information is also available in the  [metadata template.](https://classroom.oceanteacher.org/pluginfile.php/76244/mod_book/chapter/5064/Emodnet_Metadata_Template.xlsx) You can also find extended information in the VLIZ  [Data Submission Guidelines](http://www.vliz.be/sites/vliz.be/files/public/docs/DataSubmitGuidelines.pdf) and in the  [guide to publish biodiversity data in EurOBIS and EMODnet Biology](https://classroom.oceanteacher.org/pluginfile.php/76244/mod_book/chapter/5064/A%20quick%20guide%20to%20publish%20biodiversity%20data%20in%20EurOBIS%20and%20EMODnet%20Biology.pdf).
+
+### Metadata best practices (II)
+
+##### Dataset title
+
+Choose a title that is descriptive, meaningful, and concise. A good title allows a user to first assess whether the dataset is useful for the intended purpose. EMODnet Biology recommends including the region and time period of sampling. For example: "Benthic data from the Southern Irish Sea from 1989-1991"/"Zoobenthos of the Kyklades (Aegean Sea) from a survey in 2009".
+
+If a dataset has already been published with a title that does not conform to these above requirements, the original title should be kept, as re-publishing the dataset with a completely new title is likely to cause confusion and maybe data duplication.
+
+##### Abstract
+
+Provide a good abstract that can help potential users understand if the data are of interest to them. This should be a short description providing an indication of the content of the dataset (e.g.  _Distribution of dinoflagellates causing harmful algal bloom in the Mediterranean sea collected from literature. The data contains only HABs that appeared prior to 2004._).
+
+The extensive description, if included should be written in plain language and include the answers to the following questions: WHAT, WHERE, WHEN, HOW, WHY and WHO.
+
+##### Dataset contact
+
+The resource contact, person, or organization that can be contacted in case a user has questions related to the dataset or seeks collaboration: name and institute of the data provider, an email address.
+
+##### Data creator(s)
+
+They are either the persons or institutes responsible for the creation/maintenance of the dataset. The data creators will be mentioned in the citation.
+
+##### Person providing the metadata
+
+The person who created the content of the metadata record. This is usually the person who gave a title to the dataset and wrote the abstract.
+
+##### Keywords
+
+Add a few keywords that enhance dataset discovery, they can originate from the  [ASFA list](https://www.emodnet-biology.eu/contribute?page=list&subject=thestdas&SpColID=552&showall=1)  or can be created by you.
+
+##### Data licence
+
+Specify the usage of the dataset or a data license: i.e.: under which conditions the dataset can be used. EMODnet Biology requests the use of Creative Commons licenses:
+
+-   CC-0 Public Domain Dedication -  [https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/%20)
+-   CC-By  Attribution -  [https://creativecommons.org/licenses/by/4.0/](https://creativecommons.org/licenses/by/4.0/)
+-   CC-By-NC  Attribution-Non Commercial -  [https://creativecommons.org/licenses/by-nc/4.0/](https://creativecommons.org/licenses/by-nc/4.0/)
+
+##### Temporal scope
+
+Give the date or the temporal scope covered by your dataset. If there is a large temporal gap (+2 years) this should be indicated.
+
+##### Geographical scope
+
+Describe the spatial or geographical extent of the data by listing the area(s) or location(s) where data was collected (e.g. South Atlantic Ocean, Belgian part of the North Sea). We encourage the use of  [Marine Regions](http://www.marineregions.org/)  to find adequate geo-units.
+
+##### Taxonomic scope
+
+Provide an overview of the taxonomic scope present in the dataset (e.g Crustacea, Pisces). Make sure to pick the appropriate taxonomic level. We recommend the use of the  [World Register of Marine Species](https://www.marinespecies.org/)  to find the adequate taxa.
+
+##### Themes
+
+Specific to EMODnet Biology, it should describe the themes covered by the dataset: Algae, Angiosperms, Benthos, Birds, Fish, Mammals, Phytoplankton, Reptiles, Zooplankton.
+
+##### Publications related to the dataset
+
+Here you can list all publications that are (partly) based on data from this dataset, that describe it (e.g. a data-paper), or that were used to compile the data from it (if the dataset is based on literature studies).
+
+### Dataset citation
+
+The dataset citation is one of the most important metadata aspects, as it is the equivalent of a publication reference. The proposed dataset citation  **should reference the dataset itself**, and not a paper using or describing the dataset.
+
+##### Core elements of the dataset citation:
+
+Ryan, William B.F. (2009),  Global Multi-Resolution Topography (GMRT) synthesis.  Version 0.3.  Integrated Earth Data Applications (IEDA).  [http://dx.doi.org/10.1594/IEDA/100001](http://dx.doi.org/10.1594/IEDA/100001)  Accessed 17 November 2017.
+
+-   Data creator(s)  -> the people and/or organizations responsible for the intellectual work to develop the dataset.
+-   Publication Year  -> when the particular version of the dataset was first made available for use (and potential citation) by others.
+-   Title  -> the formal dataset title
+-   Version  -> the precise version of the data used, if available. Careful version tracking is critical to accurate citation.
+-   Archive and/or Distributor (~Publisher)  -> the organization distributing or caring for the data, ideally over the long term.
+-   Locator/Identifier  -> this could be a URL but ideally, it should be a persistent service, such as a DOI, Handle or ARK, that resolves to the current location of the data in question.
+-   Access Date and Time -> because data can be dynamic and changeable in ways that are not always reflected in release dates and versions, it is important to indicate when online data were accessed.
+
+For more information check the following  [guide](http://www.dcc.ac.uk/resources/how-guides/cite-datasets):
+
+Ball, A. & Duke, M. (2015). ‘How to Cite Datasets and Link to Publications’. DCC How-to Guides. Edinburgh: Digital Curation Centre. Available online: [http://www.dcc.ac.uk/resources/how-guides](http://www.dcc.ac.uk/resources/how-guides)
+
+##### Dataset citation in EMODnet Biology
+
+We require that the citation of your dataset contains the  Data Creator(s),  Publication Year  and  Title. It should also contain a DOI, when available. If applicable it can also mention the publisher and the version.
+
+-   _Belmonte, G. (2010) Zooplankton - Crustacea from the Taranto Seas. University of Salento, Department of Biological and Environmental Science and Technologies, Laboratory of Zoology and Marine Biology (LZMB), Italy.  [http://dx.doi.org/10.14284/57](http://dx.doi.org/10.14284/57)_
+-   _Bio-environmental research group; Institute of Agricultural and Fisheries research (ILVO), Belgium; (2016): Macrobenthos monitoring at long-term monitoring stations in the Belgian part of the North Sea between 1979 and 1999.  [http://dx.doi.org/10.14284/201](http://dx.doi.org/10.14284/201)_
+
+### Metadata exchange format - IPT
+
+EMODnet Biology has its own metadata catalogue and we require you to provide us with metadata for it using a template, however, if you submit your data through the IPT, you will have to fill in metadata for the IPT record too.
+
+There is no automated system to transfer the metadata from the IPT to the EMODnet Biology catalogue. Whilst harvesting your data from the IPT, EMODnet Biology may do a brief assessment on whether the metadata on your IPT and in our catalogue are the same.
+
+In order to ensure that the metadata in the EMODnet Biology Catalogue is correct, we require you to advise us when a correction in the catalogue is needed.
+
+You will learn more about the IPT and the metadata to be provided in the "[How to publish the dataset through IPT?](https://classroom.oceanteacher.org/mod/book/view.php?id=24895)" book in this course.
+
+## Technical metadata and data entity integrity
+### Technical metadata and data entity integrity
+
+Apart from data which are typically stored in a separate database, metadata also comprises a more technical aspect that makes sure the data can be used. Checks related to the technical metadata include the following aspects:
+
+-   **Parameters**: Is it unambiguously clear, for all parameters, what was actually measured (e.g. wet weight vs ash-free dry weight)?
+-   **Units**: Are the associated units recorded for all parameters**?**
+-   **Instruments, sampling descriptors, and protocols.**  Are they provided and if so is it unambiguously clear what is described?
+-   **Dates (and time):** Is the time zone specified (UTC, GMT, MET, CST, …)?
+-   **Coordinates:** Is the datum and the coordinate system recorded? How were the coordinates recorded and what is the error associated with them?
+-   **Relational**  **integrity**: if the data are provided in database format, do all ID's resolve?
+-   **Duplication**  (and 'contradictions'): are the same specimens listed only a single time for each event? Do parameters have only a single value for each occurrence or event?
+
+These technical metadata are relevant as EMODnet Biology is not only interested in biogeographical data but also in all biotic or abiotic measurements collected together with the data as they add ecological context to the observation. In order for EMODnet Biology to integrate data from different sources it is vital that parameters are unambiguously described, otherwise it is impossible to know if parameters from different datasets describe the same measurements.
+
+Of vital importance, for comparing different data from different surveys or creating biogeographical data products, are the sampling descriptor data. For example for benthos data 3 terms, at least, are crucial to be able to create a presence/absence product: the sampling instrument, sampling surface area, and the sieve mesh size.
+
+-   **Sampling instruments**  differ in the way they collect sediments. In modern benthology, box corers are preferred over grabs as they enable samples in which all sediment depths are equally represented. However, unlike grabs, box corers produce turbulence at the sample's sediment surface so some smaller epibenthic species can be swept away.
+
+-   The final benthic organism abundance data are generally expressed per surface area (e.g. number of individuals or number of species per m²). However, it is very relevant to know the original sample size, because environmental conditions in sediments are very heterogeneous and organisms tend to display aggregative distributions. This means that a slight increase in  **sampling surface area**  can have dramatic effects on the sampled abundance.
+
+-   After being extracted, organisms are selected through a sieve with a specific mesh size. Traditionally, the "macrobenthos" is selected with a  **mesh size**  of 1 mm, but sometimes other sizes are used, this is especially the case for old surveys.
+
+In the following sections, you will encounter some examples of issues regarding technical metadata and data entity integrity.
+
+### Hands-on practice 1: Metadata and data integrity
+
+Throughout this course, you can try out processing the demo dataset below. Note that exercises will not be submitted or graded in this self-paced version.
+
+In this first exercise, you can review the metadata file using the guidelines from the lecture above.  
+
+Make sure you don't forget to check the following:
+
+-   Are all metadata necessary to interpret the data available? What is missing?
+-   Does the metadata accurately describe the data (geographical and temporal cover)?
+
+[download metadata](https://docs.google.com/document/d/1mXV0iq67rICaWoFn308oPsFzBgXfDpGNVd4x8eSyLoA/export?format=docx)
+
+[download data](https://docs.google.com/spreadsheets/d/1pUoGXEeCWqFHxIMrIj_xhS6l69aWA5EOpsT9Qzr1hlQ/export?format=xlsx)
+
+(Issues include: mandatory metadata missing or not according to guidelines, inconsistencies between metadata and data, and integrity issues with the data)
+
+#  3. Formatting your dataset for EMODnet Biology
+## Field nomenclature
+
+### Data processing
+
+As you have seen in the  [introduction](https://classroom.oceanteacher.org/mod/book/view.php?id=24862&chapterid=5057), you can think of data processing as three main blocks,  **data**  **structure**, **f****ield nomenclature**, and  **content**, each of them with their own specific standards.
+
+This book will focus on  **Field nomenclature**. You start with this topic because, by applying  [Darwin Core terminology](http://rs.tdwg.org/dwc/terms.htm)  to your column names, you can later assign each of your columns to the correct table more easily.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76249/mod_book/chapter/5071/dwc.PNG)
+
+### What are Darwin Core (DwC) terms?
+
+As you've seen in the book  [Contributing datasets to EMODnet Biology](https://classroom.oceanteacher.org/mod/book/view.php?id=24862&chapterid=5056), EMODnet Biology relies on Darwin Core as a data formatting standard.
+
+[Darwin Core](https://dwc.tdwg.org/) is a body of standards for biodiversity informatics. It provides stable [terms](https://dwc.tdwg.org/terms/)  and vocabularies for sharing biodiversity data. Darwin Core is maintained by [TDWG](http://tdwg.org/)  (Biodiversity Information Standards, formerly The International Working Group on Taxonomic Databases).
+
+Darwin Core terms correspond to the column names of your data set. The field names of each of the three DwC tables have to follow the DwC terminology. There are many DwC terms, but not all of them are necessary.
+
+### Most relevant DwC terms
+
+A list of all possible DwC terms can be found in the  [Darwin Core Reference Guide.](https://dwc.tdwg.org/terms/)  The DwC terms that are most relevant to EMODnet Biology (and OBIS) format are the following (those in bold are mandatory):
+
+#### Event table
+
+**eventID**,  **datasetName**,  **institutionCode**,  **eventDate**,  **decimalLatitude**,  **decimalLongitude**, parentEventID, type, minimumDepthInMeters, maximumDepthInMeters, coordinateUncertaintyInMeters, footprintWKT, modified
+
+---
+#### Occurrence table
+
+**eventID**,  **occurrenceID**,  **scientificName**,  **scientificNameID**,  **occurrenceStatus**,  **basisOfRecord**, collectionCode, catalogNumber, scientificNameAuthorship,  kingdom, taxonRank, identificationQualifier,  modified
+
+---
+#### Extended Measurement or Fact (eMoF) table
+
+**eventID**,  **measurementType**,  **measurementTypeID**,  **measurementValue**, measurementID, occurrenceID,  measurementValueID,  _**measurementUnit** (mandatory for measurements)_, measurementUnitID, measurementAccuracy, measurementRemarks.
+
+More information about each of the other terms can be found in the book  [Data standardisation - events and occurrences](https://classroom.oceanteacher.org/mod/book/view.php?id=24873) and  [Data standardisation - eMoF](https://classroom.oceanteacher.org/mod/book/view.php?id=24886).
+
+To be able to correctly complete the assignment and quiz, it is necessary to understand what all these terms stand for.  **Make sure to check out them in the  [Darwin Core Reference Guide.](https://dwc.tdwg.org/terms/)**
+
+### Hands-on practice 2: Field nomenclature
+
+In the first exercise you made sure we understand the dataset, have all relevant information in the data file, and we checked against obvious contradictions.  
+You will now continue with the same demo dataset.
+
+In this second exercise, you will try to translate the data to Darwin Core terms.  
+You don't have to pay attention to the structure of the dataset (the three tables: Event, Occurrence, eMoF); you will work with a flat table. This means you can ignore the eMoF terms for the moment - we'll focus on that in another exercise -, you solely focus on mapping the column names of the dataset to a Darwin Core term.
+
+Tasks in this practice:
+
+-   Translate the terms used in the dataset to DwC terms.
+-   Check whether all mandatory DwC terms required by EMODnet are present. (Remember: ignore measurements or facts (eMoF) for now)
+-   Include as many recommended terms as are relevant to the dataset.
+
+Some DwC fields require a specific format (e.g. date in ISO 8601). Try to already identify some fields in the dataset that do not meet the definition of the DwC standard. However, you're not yet required to change data in this exercise; we'll have a look a this in another chapter.
+
+Before you start, have a look at this video to get acquainted with the demo dataset:
+
+![Video](https://classroom.oceanteacher.org/pluginfile.php/76249/mod_book/chapter/5132/DwC%20exercise%20intoduction%20%281%29.mp4)
+
+<video width="320" height="240" controls>
+  <source src="https://classroom.oceanteacher.org/pluginfile.php/76249/mod_book/chapter/5132/DwC%20exercise%20intoduction%20%281%29.mp4" type="video/mp4">
+</video>
+
+[Download the dataset](https://docs.google.com/spreadsheets/d/1p0AnyFKH_umWtUM6Sc3j7ZDn9uGjzgUmk5Wn3xqdaWA/export?format=xlsx) and begin.
+
+### Hands-on practice 2: Field nomenclature - solution
+
+Here's the solution to the DwC terms assignment. You can check the final result by downloading the spreadsheet below. For a more detailed explanation, check the following video:
+
+![Video](https://classroom.oceanteacher.org/pluginfile.php/76249/mod_book/chapter/5130/DwC%20solution.mp4)
+
+<video width="320" height="240" controls>
+  <source src="https://classroom.oceanteacher.org/pluginfile.php/76249/mod_book/chapter/5130/DwC%20solution.mp4" type="video/mp4">
+</video>
+
+Download the dataset with the DwC terms [here.](https://docs.google.com/spreadsheets/d/1qTTvQG0mnIA0QfidZIzPn8joGC9__AvcRbvaWScyTx0/export?format=xlsx)
+  
+## Data standardisation - events and occurrences
+### Common terms - Introduction
+
+For all Darwin Core terms there are guidelines towards what kind of content they can contain. For some terms there are also guidelines to how this content should be structured. Many of these guidelines are determined by the Darwin Core standard itself, but in some cases, OBIS and EMODnet Biology have more restrictive ones than those determined by Darwin Core.
+
+The first chapter of this book discusses the EMODnet Biology guidelines for the following relevant terms: occurrenceID, institutionCode, collectionCode, eventID, eventDate, basisOfRecord, and occurrenceStatus.
+
+Further chapters in this book will pay special attention to the  [taxonomic](https://classroom.oceanteacher.org/mod/book/view.php?id=24873&chapterid=5077) terms (scientificName, scientificNameID, scientificNameAuthor, identificationQualifier), and the  [location](https://classroom.oceanteacher.org/mod/book/view.php?id=24873&chapterid=5083) related terms (decimalLatitude, decimalLongitude, coordinatePrecisionInMeters, and footprintWKT).
+
+Some fields require a separate controlled vocabulary and non-DwC terms to be standardised. These are terms like Lifestage, Sex, sampling descriptors, and data set specific measurements like sediment grain size, and will be discussed in the book  [Data standardisation - eMoF](https://classroom.oceanteacher.org/mod/book/view.php?id=24886).
+
+### Common terms - occurrenceID, institutionCode, and collectionCode
+
+If the dataset does not yet contain (globally unique) occurrenceIDs, then they should be created. The institutionCode, collectionCode, and datasetName should be added too. All of these fields are very useful for making sure that the right data file is associated with the right data set. This makes controlling for duplicates easier.
+
+The  **occurrenceID**  is an identifier for an occurrence record and should be persistent and globally unique.  
+There are no guidelines yet on designing occurrenceIDs, but in the absence of a persistent globally unique identifier, an ID can be constructed by combining the institutionCode, the collectionCode, and the catalogNumber (or autonumber in the absence of a catalogNumber).
+
+The  **institutionCode**  is the code of the legal entity for which your data were collected (e.g UGhent, INBO, IEO, IFREMER). If you wish to specify a specific department within that legal entity, you should use both the code for the legal entity and the one for the department (e.g. UGhent - MARBIOL). For data describing museum collections, this term refers to the institute which holds the specimen.
+
+The  **datasetName** should be the same as the title of your data set, and the **collectionCode**  should be an abbreviation of that data set title.  
+If you already have a globally unique occurrenceID, you can choose to only fill in the  **datasetName**.  
+For data describing museum collections, the collectionCode refers to the name of the collection where the specimen can be found. This code should be unique for the data set, at least within the institute, and preferably also globally unique.
+
+The  **catalogNumber**  can be used in two different ways depending on the type of data.  
+For data describing museum collections: this term refers to the label of the specimen, or the jar in which the specimen is kept within a museum collection.  
+For other types of data: if the data set has identifiers for the occurrence records that are unlikely to be globally unique, they can be filled out here. If the data set has no such identifier, an autoNumber can be assigned and filled out here.
+
+An example of different unique codes, and the occurrenceID which combines these unique codes:
+
+| **institutionCode** | **collectionCode** | **catalogNumber** | **occurrenceID** | 
+| --- | --- | ---| --- |
+| UGhent | NSBS | 123 | UGhent_NSBS_123 | 
+| UGhent | NSBS | 456 | UGhent_NSBS_456 | 
+
+### Common terms - eventID, and parentEventID and type
+
+The  **eventID**  is an identifier for a sampling-related activity. This can for example refer to a Cruise that was undertaken, the visit of a station, a sample that was collected, a transect that was conducted, a quadrat that was assessed, or a subsampling action.
+
+The  **parentEventID**  is an optional field for the identifier which relates to the eventID for the 'parent' action. If the eventID of the records refers to a subsample, then the parentEventID can be filled out with the eventID that is used to record the sample.
+
+The  **type**  is used to specify to which type of activity the event refers. A controlled vocabulary is needed. Terms included are "cruise", "stationVisit", "transect", "quadrat", "sample", "subsample". Others can be added upon need.
+
+### Common terms - eventID, and parentEventID and type
+
+#### Formatting a basic eventID
+
+When we have replicate samples, each different sample needs to have a globally unique eventID and each subsample needs its own globally unique eventID. If eventIDs are already present in the dataset, it is highly recommended to use these eventIDs (in their formulation) to ensure the traceability to the database. If there are no eventIDs present in your dataset yet, we have to construct them according to the following guidelines.
+
+Creating a table with unique values requires that you have some insight of the data.  **_What combination of fields makes an event unique?_**  Typically, unique combinations of date/time, coordinates, and depth will define unique events. An eventID can thus be built using these values and a parentEventID.  
+Consider the following format:  
+“{parentEventID} & - & {other value} & - & {ID}”.  
+Here ID refers to an ID that is likely to be unique in your dataset. By including the parent structure in the eventID we increase the likelihood of this ID being globally unique.
+
+Optionally, for complicated hierarchical datasets, it can be helpful if the  _type_  is included in the eventID too. To ensure global uniqueness, a collectionCode can be added in front of the eventID. The design would then be “{parentEventID} & - & {type} & : & {ID}”. Below you can find an example that includes the type in the eventID.
+
+eventID | parentEventID | type | 
+--- | --- | --- |
+POHJEdatabase-stationVisit:10098 | | stationVisit | 
+POHJEdatabase-stationVisit:10098-sample:15976 | POHJEdatabase-stationVisit:10098 | sample | 
+POHJEdatabase-stationVisit:10098-sample:15976-subSample:sieve_05mm | POHJEdatabase-stationVisit:10098-sample:15976 | subSample
+
+
+### Common terms - eventID, and parentEventID and type
+
+#### Hierarchy and type
+
+Imagine replicates of a sample were taken without indicating a new date/time. This should be reflected by the presence of a different EventID and by the hierarchy with parentEventID, as well as the field Type (“sample” vs. “replica”).
+
+
+eventID | parentEventID | type | eventDate | decimalLongitude | decimalLatitude | 
+ --- | --- | --- | --- | --- | --- | 
+cruise_1 | |  cruise | | | |  
+cruise_1:station_1 | cruise_1 | stationVisit | -12.0190 | 33.9069 | 
+cruise_1:station_1:grab_1 | cruise_1:station_1 | sample | 2016-01-02T16:02 | | |   
+cruise_1:station_1:grab_2 | cruise_1:station_1 | sample | 2016-01-02T16:24 | | | 
+cruise_1:station_1:grab_1:subsample_1 | cruise_1:station_1:grab_1 | subsample | | | | 
+
+Note that in our example, we have not created parentEventIDs for the stations (given by LocationID). You could do it but, if you look closely, the coordinates are given at the level of the sample. Adding a parentEventID for the stations would be meaningful if all the samples within the same station shared the same coordinates (and/or depth).
+
+The inclusion of the column parentEventID in the Event Core makes it possible to create hierarchies among events. In biological oceanography, for example, data are often gathered using research vessels that visit several stations during a given cruise and deploy different instruments at each station. The event hierarchy allows for the creation of one event record for each cruise (parent event), one event record for each visit to a station (child event), different event records for each sampling activity at a station (grandchild events), and, if applicable, different event records for subsamples (great-grandchild events).
+
+The event hierarchy makes it possible to record differences in sampling time, location, and depth while grouping these samples together in the same station visit. In addition, there is the added benefit of keeping all data at the appropriate levels and thus reducing data duplication to a minimum. (From  [De Pooter et al. 2017](https://bdj.pensoft.net/articles.php?id=10989))
+
+This means that you will only need to write down the cruise name at the level of the parent event cruise. Similarly, if the coordinates for all the samples within one station are the same, you don’t need to duplicate the coordinates for all the sample (grandchild) events. However, if the coordinates are slightly different for each sample within the same station, this variation can be recorded by adding the coordinates at the level of the sample (grandchild) event. We still know that these samples belong together because it is reflected by the hierarchy: they all correspond to the same station (child) event.
+
+We also need to add a column to specify the event type. This column complements the hierarchy information given by EventID and parentEventID. To fill in the "type" column, controlled vocabulary is recommended. Commonly used terms included are "cruise", "stationVisit", "transect", "quadrat", "sample", "subSample". Others can be added upon need.
+### Common terms - eventDate
+
+##### _ISO 8601 standard_
+
+The date and the time at which the sampling event or the observation is stored in  **eventDate**. All information stored in eventDate should use the **ISO 8601 standard.**
+
+ISO 8601 dates can represent moments in time at different resolutions, as well as time intervals, which use “/” as a separator. Date and time are separated by “T”. Times can have a time zone indicator at the end. If this is not the case, then the time is assumed to be local time. When a time is UTC, a “Z” is added. Some examples of ISO 8601 dates are:
+
+[
+
+1973-02-28T15:25:00  
+2005-08-31T12:11+12  
+1993-01-26T04:39+12/1993-01-26T05:48+12  
+2008-04-25T09:53  
+1948-09-13  
+1993-01/02  
+1993-01  
+1993
+
+Besides year, month, and day numbers, ISO 8601 also supports ordinal dates (year and day number within that year) and week dates (year, week, and day number within that week). These dates are less common and have the formats YYYY-DDD (for example 2015-023) and YYYY-Www-D (for example 2014-W26-3). These ordinal dates should NOT be used for EMODnet Biology.
+
+![](https://imgs.xkcd.com/comics/iso_8601.png)](https://xkcd.com/1179/)
+
+##### _Working with dates in excel_
+
+Dates are tricky to format when working with Excel. Typically Excel will recognise the content as a date and will ask you how to display it. However, how the date is displayed in a date field differs from how it's stored or exported. The safest way to work with dates is to store them as text. A useful function in Excel for converting dates to text is "=TEXT(D2, "YYYY-MM-DD")" or if you have time specified "=TEXT(D2, "YYYY-MM-DDThh:mm")". See the video below for how to use it.
+
+Play Video
+
+https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5075/Convert%20date%20to%20text.mp4
+
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEyMzMyNDQxMjldfQ==
+-->
