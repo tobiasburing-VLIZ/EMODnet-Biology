@@ -1198,7 +1198,7 @@ How do we capture all this information in the eMoF table? Let's have a look at a
 		<td>2.7knots (average)</td>
 		<td>2knots</td>
 	</tr>
-</tbody></table><h5 id="populating-measurementtypeid-1">Populating measurementTypeID</h5>
+</table><h5 id="populating-measurementtypeid-1">Populating measurementTypeID</h5>
 <p>After looking for all the different concepts, our table would look like:</p>
 
 <table>
@@ -1398,6 +1398,6 @@ Download the solution to this exercise [here](https://docs.google.com/spreadshee
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY1Mjg2OTAsLTE4NTQwOTk0MjVdfQ
-==
+eyJoaXN0b3J5IjpbLTM2OTU3MTQ2OSwtMTQ5NjUyODY5MCwtMT
+g1NDA5OTQyNV19
 -->
