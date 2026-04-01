@@ -856,8 +856,9 @@ Check the format/content of the fields:
 The video below explains step by step how to standardise the dataset using Excel. You can also [download the solution here.](https://docs.google.com/spreadsheets/d/152OuOthfSbA123kLLfQ2Ou_ndJ3Y436vmQvv_mrdstI/export?format=xlsx)
 
   
-# Data structure
+## Data structure
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NTQyMTM4NiwxNTcxNjI5ODQ2LC0xMj
-MzMjQ0MTI5XX0=
+eyJoaXN0b3J5IjpbNjE1MTg4Mjg5LDE1NzE2Mjk4NDYsLTEyMz
+MyNDQxMjldfQ==
 -->
