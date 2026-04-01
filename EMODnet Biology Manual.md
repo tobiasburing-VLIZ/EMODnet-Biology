@@ -825,6 +825,33 @@ There are a number of taxa for which matching will be difficult. Draft your own 
 So the first step you needed to undertake was to clean the names provided in the data file and split information into different columns. If you did this correctly, the file you created should [look like this.](https://docs.google.com/spreadsheets/d/1lImZ1ULVTd1fu4dPPL_UBl0_ApM5NzGOsIO4p66jpRc/export?format=xlsx)
 
 If you want you can redo the [taxon match](http://marinespecies.org/aphia.php?p=match) using this file (remove the first row as it's only informative) and check your solution below. Otherwise, you can _type_ _done_ in the out the text-box below, and the solution will also become available to you.
+
+### Hands-on practice 3: Taxon Match Tool - solution
+
+Here you can find the solution of the Taxon Match assignment.
+
+The column "remarks" addresses what to do for those cases that didn't match easily. The column "LSID" (marked in green) is the only output of the Taxon Match that you need to add to your data file.
+
+[https://docs.google.com/spreadsheets/d/1cWIxB4ZQ3dD6HYsBtzvo28s4NnFpihgZJ7UQ1d9Kag0//export?format=xlsx](https://docs.google.com/spreadsheets/d/1cWIxB4ZQ3dD6HYsBtzvo28s4NnFpihgZJ7UQ1d9Kag0//export?format=xlsx)
+
+### Hands-on practice 4: Data standardisation - events and occurrences
+
+In the previous assignment, we added the mandatory fields for EMODnet Biology. Some of the fields are still empty, other fields do not meet the criteria. Try to apply the lessons learned in this session to the [demo dataset](https://docs.google.com/spreadsheets/d/1fmdu88PkRgwJCdiGZyYMwxgeHqkIAQof_9GxFel8oEw/export?format=xlsx) as we left it in session 3. You may need to reference the [dataset metadata](https://docs.google.com/document/d/1hu6Xx44CKwYDVkdIHK9EgvSCKD4Wtzjirrfy8Qa2Hng/export?format=docx) for some parts.
+
+You will need to add:
+
+-   institutionCode
+-   occurrenceID
+-   basisOfRecord
+-   occurrenceStatus
+-   scientificNameID
+
+Check the format/content of the fields:
+
+-   eventDate
+-   scientificName
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc3NTEwMjM3LC0xMjMzMjQ0MTI5XX0=
+eyJoaXN0b3J5IjpbLTEyMDA3MTMyOTIsLTEyMzMyNDQxMjldfQ
+==
 -->
