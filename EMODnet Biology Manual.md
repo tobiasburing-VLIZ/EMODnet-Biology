@@ -1204,33 +1204,11 @@ How do we capture all this information in the eMoF table? Let's have a look at a
 ##### Populating measurementTypeID
 
 After looking for all the different concepts, our table would look like:
-**measurementType** | **Label** | **Concept URI** | **measurementValue&Unit** | #
+**measurementType** | **Label** | **Concept URI** | **measurementValue&Unit** | °
 --- | --- | --- | --- | ---
-Gear/device | Sampling instrument name | [http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/](http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/)
-
-Otter-Trawl Maireta System (OTMS)
-
-Agassiz dredge
-
-Mesh size
-
-Sampling net mesh size
-
-[http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/](http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/)
-
-12mm
-
-12mm
-
-Net horizontal opening
-
-Sampling device aperture length
-
-[http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/)
-
-12.7m
-
-2.5m
+Gear/device | Sampling instrument name | [http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/](http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/) | Otter-Trawl Maireta System (OTMS) | Agassiz dredge
+Mesh size | Sampling net mesh size | [http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/](http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/) | 12mm | 12mm
+Net horizontal opening | Sampling device aperture length | [http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/) | 12.7m | 2.5m
 
 Net vertical opening
 
@@ -1252,6 +1230,6 @@ Speed of measurement platform relative to ground surface {speed over ground}
 
 2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTMyODUwOSwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbMTM3MDI2OTA3MiwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
