@@ -615,7 +615,8 @@ ISO 8601 dates can represent moments in time at different resolutions, as well a
 
 Besides year, month, and day numbers, ISO 8601 also supports ordinal dates (year and day number within that year) and week dates (year, week, and day number within that week). These dates are less common and have the formats YYYY-DDD (for example 2015-023) and YYYY-Www-D (for example 2014-W26-3). These ordinal dates should NOT be used for EMODnet Biology.
 
-![](https://imgs.xkcd.com/comics/iso_8601.png)](https://xkcd.com/1179/)
+![](https://imgs.xkcd.com/comics/iso_8601.png)
+(https://xkcd.com/1179/)
 
 ##### _Working with dates in excel_
 
@@ -1028,8 +1029,9 @@ Length | [](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[http://voca
 Length (mm) | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
 length_in_mm | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
 Length of specimen | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+
 Note: although measurementType, measurementValue, and measurementUnit are free text fields, it is recommended to fill them in with the "preferred label" given by the BODC parameter.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIzNzQxNTE3LDEyOTUyOTI4NjAsMTU3MT
-YyOTg0NiwtMTIzMzI0NDEyOV19
+eyJoaXN0b3J5IjpbMTQzMzQ3Nzk1MCwxMjk1MjkyODYwLDE1Nz
+E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
