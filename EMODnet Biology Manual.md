@@ -1186,27 +1186,23 @@ How do we capture all this information in the eMoF table? Let's have a look at a
 	</tr>
 	<tr>
 		<td>Net horizontal opening</td>
-		<td></td>
-		<td></td>
+		<td>12.7m</td>
+		<td>2.5m</td>
+	</tr>
+	<tr>
+		<td>Net vertical opening</td>
+		<td>1.4m</td>
+		<td>1.2m</td>
+	</tr>
+		</tr>
+	<tr>
+		<td>Trawling speed</td>
+		<td>2.7knots (average)</td>
+		<td>2knots</td>
+	</tr>
 
 
-
-12.7m
-
-2.5m
-
-Net vertical opening
-
-1.4m
-
-1.2m
-
-Trawling speed
-
-2.7knots (average)
-
-2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc0MTE3NzUsMTI5NTI5Mjg2MCwxNT
-cxNjI5ODQ2LC0xMjMzMjQ0MTI5XX0=
+eyJoaXN0b3J5IjpbLTgxNjQxNjM2NSwxMjk1MjkyODYwLDE1Nz
+E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
