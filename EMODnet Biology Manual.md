@@ -537,10 +537,10 @@ For other types of data: if the data set has identifiers for the occurrence reco
 
 An example of different unique codes, and the occurrenceID which combines these unique codes:
 
-| **institutionCode** | **collectionCode** | **catalogNumber** | **occurrenceID** | 
-| --- | --- | ---| --- |
-| UGhent | NSBS | 123 | UGhent_NSBS_123 | 
-| UGhent | NSBS | 456 | UGhent_NSBS_456 | 
+ **institutionCode** | **collectionCode** | **catalogNumber** | **occurrenceID**  
+--- | --- | ---| --- 
+ UGhent | NSBS | 123 | UGhent_NSBS_123  
+ UGhent | NSBS | 456 | UGhent_NSBS_456  
 
 ### Common terms - eventID, and parentEventID and type
 
@@ -1031,7 +1031,9 @@ length_in_mm | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https:/
 Length of specimen | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
 
 Note: although measurementType, measurementValue, and measurementUnit are free text fields, it is recommended to fill them in with the "preferred label" given by the BODC parameter.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzQ3Nzk1MCwxMjk1MjkyODYwLDE1Nz
-E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbNzc3NDU4NTE4LDEyOTUyOTI4NjAsMTU3MT
+YyOTg0NiwtMTIzMzI0NDEyOV19
 -->
