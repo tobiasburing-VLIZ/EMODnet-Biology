@@ -1032,8 +1032,99 @@ Length of specimen | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](h
 
 Note: although measurementType, measurementValue, and measurementUnit are free text fields, it is recommended to fill them in with the "preferred label" given by the BODC parameter.
 
+### Introduction to BODC controlled vocabularies
 
+Controlled vocabularies are collections of concepts that can be used to populate a given field in a data or metadata model. The BODC vocabularies comprise several collections (also called lists) of standardised terms that cover a broad spectrum of disciplines of relevance to the oceanographic (and wider) community. The vocabulary services are technically managed and hosted by the British Oceanographic Data Centre (BODC) by means of the NERC Vocabulary Server
+
+Using standardised sets of terms solves the problem of ambiguities associated with data markup and also enables records to be interpreted by computers. This opens up datasets to a whole world of possibilities for computer-aided manipulation, distribution, and long-term reuse. See more info [here](https://www.seadatanet.org/Standards/Common-Vocabularies).
+
+In the eMoF table, you use the measurementTypeID, measurementValueID, and measurementUnitID fields to store a machine-readable label (i.e. a code, URI or URL).
+
+**But where can you find these concepts?**
+
+There are different interfaces to search for these concepts and their URIs. For example:
+
+-   [The BODC vocabulary search](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/)
+    
+-   [The SeaDataNet Facet search](http://seadatanet.maris2.nl/bandit/browse_step.php)  (for the P01 collection)  
+    
+
+Finding the appropriate vocabulary (and, therefore, which URI to include in the eMoF table) can be challenging without some insight and understanding of the semantic model behind it. This falls outside the scope of this course. However, what is interesting to know is that all the concept URIs that you need to provide follow this structure:
+
+“http://vocab. nerc.ac.uk/collection/{listID}/{version}/{termID}/”
+
+**Examples**
+
+-   [http://vocab.nerc.ac.uk/collection/P01/current/ADBIOL01/](http://vocab.nerc.ac.uk/collection/P01/current/ADBIOL01/)
+    -   {listID}  = P01 -> this means we are looking into the collection known as P01 or "Parameter usage vocabulary"
+        
+    -   {version} = current
+        
+    -   {termID}  = ADBIOL01 -> an ID for this concept (Abundance of a biological entity specified elsewhere per unit length sampled of the water body)
+        
+
+-   [http://vocab.nerc.ac.uk/collection/P06/current/KGXX/](http://vocab.nerc.ac.uk/collection/P06/current/KGXX/)
+
+-   {listid}  = P06 -> this means we are looking into the collection known as P06 or "BODC-approved data storage units"
+    
+-   {version} = current
+    
+-   {termid}  = KGXX -> an ID for this concept (Kilograms)
+
+### Choosing your BODC vocab
+
+BODC contains a large number of terms and sometimes you can find two vocabs that might look identical. In these cases, you will need to choose the one that applies the best to your data (if any). If the term you are looking for does not exist yet in BODC, it can be requested (contact  [bio@emodnet.eu](mailto:b%69o@%65m%6f%64n%65%74.e%75)  for more information).
+
+There are a few tips that will help us decide which BODC vocab to use:
+
+-   **Vocab term suitability**: Use a BODC vocab only if it has the exact same meaning as your term, e.g.:
+    -   If your measurement is "_Concentration of phosphate in the water body_”, you should rather add the BODC parameter [http://vocab.nerc.ac.uk/collection/P35/current/EPC00007/](http://vocab.nerc.ac.uk/collection/P35/current/EPC00007/) and not just [http://vocab.nerc.ac.uk/collection/S27/current/CS026904/  
+        ](http://vocab.nerc.ac.uk/collection/S27/current/CS026904/)[  
+        ](http://vocab.nerc.ac.uk/collection/S27/current/CS026904/)
+-   **Collection suitability**: Use a BODC vocab from a collection that is adequate for your data, e.g.:
+
+-   If your fact is "Sex/gender of an organism", searching for "sex" in the  [BODC Vocabulary Search](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/) would result in 17 different collections. Let's say after a quick search you are hesitating between [http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/](http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/) from the "P01 BODC Parameter Usage Vocabulary collection" and [http://vocab.nerc.ac.uk/collection/MVB/current/MVB000023/](http://vocab.nerc.ac.uk/collection/MVB/current/MVB000023/) from the "MVB Movebank Attribute Dictionary collection".  
+    To assess which collection to use, look carefully at the title and definition of the collections to see which one of them relates the most to the type of data you are handling:
+
+**Title**
+
+**Definition**
+
+P01 BODC Parameter Usage Vocabulary
+
+_Terms built using the BODC parameter semantic model designed to describe individual measured phenomena. May be used to mark up sets of data such as a NetCDF array or spreadsheet column._
+
+MVB Movebank Attribute Dictionary
+
+_Terms used to describe on-animal sensor data stored in the Movebank database (movebank.org), including individual measurements (events), reference data (animals, tags, deployments) and studies._
+
+  
+Pro Tip: _Access the whole collection by using a URL of the type [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/)__{listid}/ -> [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/)_
+
+_OR click on search without specifying a collection or a "search text" to access the metadata of all the collections. Download the results for a better check_
+
+  
+
+-   **Vocab term integrity**: Make sure that your term is not deprecated and that you are using the most recent version of the vocab term. Using 'Simple search within a vocabulary' in [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/) is the best and fastest way to browse and find non-deprecated current terms.
+
+To make things easier, the most often used BODC collections within OBIS-ENV format are identified below:
+
+_**measurementTypes**_
+
+-   [P01](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P01/)- BODC Parameter Usage Vocabulary
+
+_**measurementValues**_
+
+-   [S11](http://vocab.nerc.ac.uk/collection/S11/current/)- Biological entity life stage terms
+-   [S10](http://vocab.nerc.ac.uk/collection/S10/current/)- BODC parameter semantic model biological entity gender terms
+-   [L05](http://vocab.nerc.ac.uk/collection/L05/current/)- SeaDataNet device categories
+-   [L22](http://vocab.nerc.ac.uk/collection/L22/current/)- SeaVoX Device Catalogue
+-   [C17](http://vocab.nerc.ac.uk/collection/C17/current/)- ICES Platform Codes
+
+_**measurementUnits**_
+
+-   [P06](http://vocab.nerc.ac.uk/collection/P06/current/)- Approved data storage units
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc3NDU4NTE4LDEyOTUyOTI4NjAsMTU3MT
-YyOTg0NiwtMTIzMzI0NDEyOV19
+eyJoaXN0b3J5IjpbMTU1ODM2MzYzNCwxMjk1MjkyODYwLDE1Nz
+E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
