@@ -858,7 +858,32 @@ The video below explains step by step how to standardise the dataset using Excel
   
 ## Data structure
 
+### Introduction
+
+Darwin Core Archive (DwC-A) is the standard for publishing biodiversity data using Darwin Core terms. As we've seen, this model is used in EMODnet Biology and OBIS (and GBIF). The conceptual data model of the Darwin Core Archive is a “star schema” with a core table in the center of the star and extension tables radiating out of the center, linked by database keys such as ID columns. In practice, EMODnet Biology and OBIS use a subset of 1 to 3 tables to represent the data. In most cases, we will use the three tables.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5088/Event_core.png)
+
+**![](https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5088/DwC-A-formats.png)**
+
+#### _Reminder: What are the tables used for?_
+
+##### Event table:
+
+-   to store sample and/or observation information (time, location, depth, event hierarchy)
+
+##### Occurrence table:
+
+-   to store occurrence details (taxonomy, identification, organismID...)
+
+##### Extended Measurements or Facts (eMoF) table:
+
+-   organism quantifications (e.g. counts, abundance, biomass, % live cover, etc.)
+-   species biometrics (e.g. body length, weight, etc.)
+-   facts documenting a specimen (e.g. living/dead, behaviour, invasiveness, etc.)
+-   abiotic measurements (e.g. temperature, salinity, oxygen, sediment grain size, habitat features)
+-   facts documenting the sampling activity (e.g. sampling device, sampled area, sampled volume, sieve mesh size).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE1MTg4Mjg5LDE1NzE2Mjk4NDYsLTEyMz
-MyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbLTI0NTEzMzI4MCwxNTcxNjI5ODQ2LC0xMj
+MzMjQ0MTI5XX0=
 -->
