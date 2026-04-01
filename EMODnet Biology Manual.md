@@ -2474,7 +2474,18 @@ This situation is handled by creating separate eMoF records for each habitat des
 
 Table. Example of how the eMoF table is populated in the context of submitting habitat data.
 
-#
+**IN DEVELOPMENT**
+
+### List of recommended vocabularies
+
+The table below includes details of the recommended vocabularies that should be used when sharing habitats data.
+
+Currently EMODnet Biology only supports the standardized habitat vocabularies of the EIONET and NERC habitat vocabulary collections although non-supported habitat vocabulary collections can potentially be used if they apply.
+
+**IN  DEVELOPMENT**
+
+# # 4. Dealing with archaeology data
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMDU2MDU1LC0xOTk5MzcxNDIxXX0=
+eyJoaXN0b3J5IjpbMTYxMDQ1MTgzNiwtMTk5OTM3MTQyMV19
 -->
