@@ -1171,12 +1171,14 @@ How do we capture all this information in the eMoF table? Let's have a look at a
 <table>
 	<tr>
 		<td>
-		  <b>measurementType</b> 
+			 <b> measurementType 
 		</td>
 		<td>
-		**measurementValue&Unit**
+			 <b>measurementValue&Unit
 		</td>
-		
+	<tr colspan=3>
+		<td>
+		</td>
 
 Gear/device type 
 Otter-Trawl Maireta System (OTMS)
@@ -1203,6 +1205,6 @@ Trawling speed
 
 2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNTc3MDU3OSwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbMTU2MDU3MDM4MSwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
