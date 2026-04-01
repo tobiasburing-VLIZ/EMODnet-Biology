@@ -985,14 +985,33 @@ https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5094/eM
 
 3. Add other biotic measurements. E.g.: Abundance (N/km2). Include the the necessary values of EventID, OccurrenceID and CountInSample columns, and fill out all the rows of the column [eMoF.measurementType] with “Abundance” and fill in the corresponding rows of the column [eMoF.measurementUnit] with “N/km2”.
 
-Repeat for Wet Weight Biomass (kg/km2), making sure to fill in measurementType and measurementUnit with the appropriate values: “Wet weight biomass” and “kg/km2”.
+	Repeat for Wet Weight Biomass (kg/km2), making sure to fill in measurementType and measurementUnit with the appropriate values: “Wet weight biomass” and “kg/km2”.
 
 https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5094/emof_abundance_biomass%20%281%29.mp4
 
 4. Add the samplingProtocol field. You have stored this in the Event table because it's related to the sampling event and not to the occurrences. For this type of measurement, which applies to the whole sample, we only need to include the eventID in the eMoF table. For example, if we collect data on the sediment temperature of a benthos sample, this temperature value applies to the whole sample and, therefore, relates to all the Occurrences that belong to that sample, which share the same eventID. By linking sampling and abiotic measurements directly to the eventID and by having our event table already normalised, we avoid duplication of data. Copy the values of the events and samplingProtocol columns, and place them into [eMoF.eventID] and [eMoF.measurementValue] respectively, under the previous records. Fill in all the blank rows of the column [eMoF.measurementType] with "Sampling protocol".
 
-Play Video
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5094/emof_sampling%20%281%29.mp4
+
+At this stage, the data are completely structured. The event table is normalised and linked to the occurrence and eMoF table by an eventID. The occurrence table is linked to the measurements in the eMoF table by an occurrenceID.  
+In a next chapter, we will go through the workflow of standardising the content of the eMoF table with controlled vocabulary.
+
+### Hands-on practice 5: Data structure
+
+We have seen how to restructure the original dataset from a flat table to an Event core format, with its three correspondent tables: Event, Occurrence and eMoF.
+
+Now it's time to try by yourself. Download the following spreadsheet and make the necessary transformations to get it in Event Core format:
+
+[Data structure exercise](https://docs.google.com/spreadsheets/d/1dzAubw2wSdNo7DWyFDwctt6PgJ20NdnfRblDn-c0daA/export?format=xlsx)
+
+### Hands-on practice 5: Data structure - solution
+
+In the following link you can find the resulting dataset in Event Core format:
+
+[Data structure solution](https://docs.google.com/spreadsheets/d/1sJg6d60V1assxJXtkJ-D_tE7oLzDMyuZL0p-UBX77io/export?format=xlsx)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0MDQ0MjI4LDE1NzE2Mjk4NDYsLTEyMz
-MyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbMTI5NTI5Mjg2MCwxNTcxNjI5ODQ2LC0xMj
+MzMjQ0MTI5XX0=
 -->
