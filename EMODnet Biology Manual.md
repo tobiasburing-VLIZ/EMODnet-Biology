@@ -2454,7 +2454,27 @@ Download the file [here](https://docs.google.com/spreadsheets/d/1rmWVQZw_5x_YWzY
 
 Download the solution to this exercise [here](https://docs.google.com/spreadsheets/d/17p6z7_knVm2Nb3_FQJdHJgDvbX0Uwz8DG9OVEb9cEtU/export?format=xlsx)
 
+  
+## Seabed Habitats data type
+### Why share habitat data?
 
+There is a demonstrable need to provide access to combined species and habitat data to ensure low-friction aggregation at the larger spatial scales, facilitating international interoperability between disparate benthic habitat data holdings, and improving interoperability and standardisation in increasingly common holistic benthic surveys, capturing both species and habitat information (among other data types).  
+
+Leveraging developments to include additional “measurements and facts” within the Darwin Core Archive standard for biodiversity data exchange allowed the EMODnet Seabed Habitats and Biology teams to develop guidance and current best practices to support other organisations and individuals wishing to publish habitat and species biodiversity data together.
+
+  
+
+The information provided in this topic adheres to the guidance available in the document 'A standard approach to structuring classified habitat data using the Darwin Core Extended Measurement or Fact Extension available via the  [link](https://emodnet.ec.europa.eu/sites/emodnet.ec.europa.eu/files/public/EMODnet_SeaBed-Habitats_guidance-on-submitting-habitat-point-data-to-eurobis_v12.pdf).
+
+### Vocabularies describing habitats
+
+Any habitat occurrence may be, and often is, described under more than one classification system, where such classifications cover different aspects of the habitat, are used for specific reporting requirements, or cover a different geographic scope (e.g. National and European classification systems).
+
+This situation is handled by creating separate eMoF records for each habitat description while referring to the same id for the relevant event. If habitats were directly translated between classification systems (for example using a lookup table), this should be recorded in the measurementMethod field of the derived habitat, noting the measurementID of the source habitat if possible.
+
+Table. Example of how the eMoF table is populated in the context of submitting habitat data.
+
+#
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTkzNzE0MjFdfQ==
+eyJoaXN0b3J5IjpbMTMwMDU2MDU1LC0xOTk5MzcxNDIxXX0=
 -->
