@@ -960,8 +960,39 @@ By leaving ScientificName out of the selection, we are left with a table that co
 
 https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5093/structure_event_normal1%20%281%29.mp4
 
+### Transformation workflow
 
+#### Creating the eMoF table
+
+#### _Two basic principles_
+
+There are two particularities about the eMoF table that you need to know about before you create it:
+
+-   We need to distinguish between data related to the occurrences (e.g. biomass, abundance, and count) and data related to sampling events (e.g. sampling instrument). We will treat them slightly differently.  
+    As you know, the eMoF table contains both the fields eventID and occurrenceID. For the biotic measurements related to the Occurrences (CountInSample, Abundance (N/km2), and Wet Weight Biomass (kg/km2) in this case), we will need to copy both the eventID and the occurrenceID. For the abiotic measurements or other data related to the sampling event, we will only copy the eventID column.
+
+-   We will only use  **one column**  to store all the measurement values. In the video example, the values now stored in 4 columns will be placed into one single column (measurementValue). The field name as we know it now, will be stored as a value of the column measurementType. This means we have to copy-paste these columns one by one.
+
+#### _Workflow_
+
+1. Create a new sheet with all the necessary eMoF columns: EventID, OccurrenceID, measurementType, measurementValue, measurementUnit, measurementTypeID, measurementValueID, measurementUnitID and measurementRemarks.
+
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5094/eMoF_names%20%281%29.mp4
+
+2. Add biotic measurements, the example begins with the CountInSample column. Include the the necessary values of EventID, OccurrenceID and CountInSample columns, and fill out all the rows of the column [eMoF.measurementType] with “Count in sample”.
+
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5094/eMoF_countinsample%20%281%29.mp4
+
+3. Add other biotic measurements. E.g.: Abundance (N/km2). Include the the necessary values of EventID, OccurrenceID and CountInSample columns, and fill out all the rows of the column [eMoF.measurementType] with “Abundance” and fill in the corresponding rows of the column [eMoF.measurementUnit] with “N/km2”.
+
+Repeat for Wet Weight Biomass (kg/km2), making sure to fill in measurementType and measurementUnit with the appropriate values: “Wet weight biomass” and “kg/km2”.
+
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5094/emof_abundance_biomass%20%281%29.mp4
+
+4. Add the samplingProtocol field. You have stored this in the Event table because it's related to the sampling event and not to the occurrences. For this type of measurement, which applies to the whole sample, we only need to include the eventID in the eMoF table. For example, if we collect data on the sediment temperature of a benthos sample, this temperature value applies to the whole sample and, therefore, relates to all the Occurrences that belong to that sample, which share the same eventID. By linking sampling and abiotic measurements directly to the eventID and by having our event table already normalised, we avoid duplication of data. Copy the values of the events and samplingProtocol columns, and place them into [eMoF.eventID] and [eMoF.measurementValue] respectively, under the previous records. Fill in all the blank rows of the column [eMoF.measurementType] with "Sampling protocol".
+
+Play Video
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDEzMTA3MzUsMTU3MTYyOTg0NiwtMT
-IzMzI0NDEyOV19
+eyJoaXN0b3J5IjpbNTg0MDQ0MjI4LDE1NzE2Mjk4NDYsLTEyMz
+MyNDQxMjldfQ==
 -->
