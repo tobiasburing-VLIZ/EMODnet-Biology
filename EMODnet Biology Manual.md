@@ -1201,8 +1201,57 @@ How do we capture all this information in the eMoF table? Let's have a look at a
 		<td>2knots</td>
 	</tr>
 
+##### Populating measurementTypeID
 
+After looking for all the different concepts, our table would look like:
+**measurementType** | **Label** | **Concept URI** | **measurementValue&Unit** | #
+--- | --- | --- | --- | ---
+Gear/device | Sampling instrument name | [http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/](http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/)
+
+Otter-Trawl Maireta System (OTMS)
+
+Agassiz dredge
+
+Mesh size
+
+Sampling net mesh size
+
+[http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/](http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/)
+
+12mm
+
+12mm
+
+Net horizontal opening
+
+Sampling device aperture length
+
+[http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/)
+
+12.7m
+
+2.5m
+
+Net vertical opening
+
+Sampling device aperture width
+
+[http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/)
+
+1.4m
+
+1.2m
+
+Trawling speed
+
+Speed of measurement platform relative to ground surface {speed over ground}
+
+[http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/](http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/)
+
+2.7knots (average)
+
+2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjQxNjM2NSwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbMTE5NTMyODUwOSwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
