@@ -1010,8 +1010,49 @@ In the following link you can find the resulting dataset in Event Core format:
 
 [Data structure solution](https://docs.google.com/spreadsheets/d/1sJg6d60V1assxJXtkJ-D_tE7oLzDMyuZL0p-UBX77io/export?format=xlsx)
 
+## Data standardisation - eMoF
+### eMoF table and controlled vocabularies
 
+Previously you have seen how to structure the data into Event Core format and we have started populating the eMoF table.
+
+For the moment, we have only used the  **measurementType**,  **measurementValue**  and  **measurementUnit**  fields. These are completely unconstrained, human-readable fields and can be populated with  free text annotation. The main advantage of free text fields is that they allow to capture of complex and yet unclassified information. However, free text introduces heterogeneity (e.g. spelling or wording differences) that become a major challenge for effective data integration and analysis.
+
+The eMoF table provides three additional fields to standardise the measurement types, values, and units:  **measurementTypeID**,  **measurementValueID**  and  **measurementUnitID**. These are the columns that will be populated using  controlled vocabularies  from the  Natural Environment Research Council (NERC) Vocabulary Server, developed, maintained, and governed by the British Oceanographic Data Centre (BODC).
+
+Example of parameter standardisation using controlled vocabularies:
+
+**MeasurementType** (free text) | 
+
+**MeasurementTypeID** (controlled vocabulary)
+
+Body length
+
+[http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+
+Length
+
+[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+
+Length (mm)
+
+[http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[  
+](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+
+length_in_mm
+
+[http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[  
+](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+
+Length of specimen
+
+[http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[  
+](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+
+  
+  
+
+Note: although measurementType, measurementValue, and measurementUnit are free text fields, it is recommended to fill them in with the "preferred label" given by the BODC parameter.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NTI5Mjg2MCwxNTcxNjI5ODQ2LC0xMj
-MzMjQ0MTI5XX0=
+eyJoaXN0b3J5IjpbODc3NjkzOTY5LDEyOTUyOTI4NjAsMTU3MT
+YyOTg0NiwtMTIzMzI0NDEyOV19
 -->
