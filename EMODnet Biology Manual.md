@@ -1167,23 +1167,24 @@ The dataset already contains information on the sampling method. We know that tw
     
 
 How do we capture all this information in the eMoF table? Let's have a look at all the parameters that can be extracted from those sentences:
+<td></td>
 
 <table>
 	<tr>
-		<td>
-			 <b> measurementType 
-		</td>
-		<td>
-			 <b>measurementValue&Unit
-		</td>
+		<td> <b> measurementType </td>
+		<td> <b>measurementValue&Unit</td>
+	</>
 	<tr colspan=3>
-		<td>
-		</td>
+		<td>Gear/device type </td>
+		<td> Otter-Trawl Maireta System (OTMS) </td>
+		<td> Agassiz dredge </td>
+	
 
-Gear/device type 
-Otter-Trawl Maireta System (OTMS)
 
-Agassiz dredge
+
+
+
+
 
 Mesh size | 12mm | 12mm
 
@@ -1205,6 +1206,6 @@ Trawling speed
 
 2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDU3MDM4MSwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbLTUxMjgxNDQxMSwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
