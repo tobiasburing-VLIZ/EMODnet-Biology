@@ -681,8 +681,44 @@ In case your data set only contains 2 or 3 taxa you can quite quickly get their 
 
 The following video shows you how you use this search and where to find the LSID:
 
+https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5079/WoRMS_match%201%20species%20%281%29.mp4
+
+##### **Taxon Match Tool:**
+In case your data set contains many taxa, finding the LSID for each of them will be a tedious task. Therefore, WoRMS has developed a tool that allows easy matching of multiple taxa at the same time; the  [WoRMS Taxon Match Tool](http://marinespecies.org/aphia.php?p=match).
+A manual for the WoRMS Taxon Match Tool is available  [here](http://www.marinespecies.org/tutorial/taxonmatch.php).
+
+The following video shows how you can use this tool to get the LSID's for multiple taxa at the same time.
+
+https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5079/WORMS%20TAXON%20MATCH%20%281%29.mp4
+
+##### **Features of the Taxon Match Tool:**
+
+**Fuzzy matches**: the Taxon Match Tool takes into account spelling variations of the valid name in WoRMS.
+
+**Ambiguous matches**: sometimes the same name was used by different authors to describe different species (homonyms). In this case, the tool returns the message that the match was ambiguous. Later on we’ll see how to handle these cases.
+
+The  **limit to taxa belonging to**  helps you reduce ambiguous matches by limiting the available matches to a single taxonomic group.
+
+You can only match 3000 rows at a time. If your data set contains more than 3000 distinct taxa, you can use the LifeWatch web service (see below) or split your distinct taxon list into multiple files and run each of them through the service.
+
+After matching, the tool will return a file with the AphiaIDs, LSIDs, valid names, authorities, classification, and any other output you have selected.
+
+#### _Many taxon records_
+
+Usually, you will have a data set where the same taxonomic name occurs multiple times. A data set can have for example 50,000 occurrence records of only 200 different taxa. In this case, it would be much more practical to provide the WoRMS Taxon Match Tool with a distinct list of those 200 taxonomic names that occur in your data set.
+
+To do this you will need to add information from one table to another table. In SQL or R, a  [join statement](https://www.rdocumentation.org/packages/plyr/versions/1.8.4/topics/join)  can be used, and in Excel the  **VLOOKUP**  function can be used. This function can be used for adding matched names from the WoRMS taxon matching service to your source data. VLOOKUP accepts the following arguments:
+
+-   The cell in the first table which links to the second table
+-   The range of the second table
+-   The index of the column in the second table which has the key to link to the first table
+-   The last argument needs to be FALSE to obtain an exact match
+
+Make sure to use dollar signs to fix the rows and columns in the second argument.
+
+In the following video, we create a worksheet with unique taxon names, submit it to the WoRMS taxon matching service, and add the matched IDs back to our source data using VLOOKUP:
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYxNTUzODUsLTEyMzMyNDQxMjldfQ
-==
+eyJoaXN0b3J5IjpbMjA2Njc2MTc3NSwtMTIzMzI0NDEyOV19
 -->
