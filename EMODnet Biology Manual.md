@@ -883,7 +883,57 @@ Darwin Core Archive (DwC-A) is the standard for publishing biodiversity data usi
 -   facts documenting a specimen (e.g. living/dead, behaviour, invasiveness, etc.)
 -   abiotic measurements (e.g. temperature, salinity, oxygen, sediment grain size, habitat features)
 -   facts documenting the sampling activity (e.g. sampling device, sampled area, sampled volume, sieve mesh size).
+
+### When to use Event Core and when to use Occurrence Core
+
+Depending on the nature of your data, you can organize your dataset in three different ways:  _Occurrence Core without ExtendedMeasurementsOrFact (eMoF) extension_,  _Occurrence Core with eMoF extension_  or  _Event Core with Occurrence Core extension and ExtendedMeasurementOrFact extension._
+
+#### _Occurrence Core without  **e**MoF:_
+
+-   There is no information on how the data was sampled or samples were processed.
+-   There are no abiotic measurements taken or provided
+-   Biological measurements are made on individual specimens (each specimen is a single occurrence record)
+-   This is often the case for museum collections, citations of occurrences from literature, and individual sightings.
+-   The occurrenceID is the unique identifier in this table.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5089/occurrencecore.png)
+
+#### _Occurrence Core with  **e**MoF:_
+
+-   Occurrences and measurements made on individual specimens, e.g. body size, counts, wet weight, life stage, etc.
+-   The data in the two tables are connected by their occurrenceID.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5089/occ-emof.png)
+
+#### _Event Core with Occurrence Core extension and  **e**xtendedMeasurementOrFact extension:_
+
+-   When the data set contains abiotic measurements, or other biological measurements which are related to an entire sample (not a single specimen)
+-   When specific details are known about how a biological sample was taken and processed.
+-   Event Core should be used in combination with the Occurrence Extension and the ExtendedMeasurementOrFact Extension.
+-   The data in the three tables are connected by their occurrenceID and/or eventID.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5089/obis-env-data-links.png)
+
+### Transformation workflow
+
+This chapter covers the workflow of splitting a flat table into our three DwC tables; event, occurrence, and eMoF. This is necessary to integrate the data in the EurOBIS relational database.
+
+The summarised workflow is as follows:
+
+1.  **Occurrence table**: Select the relevant columns/fields of the Occurrence table and place them in a different sheet/table that is named “Occurrence”. At this moment it is useful to include the fields that contain biological measurements related to the occurrences (e.g. biomass).
+2.  **Event table**: Select the relevant columns/fields of the Event table and place them in a different sheet/table that is named “Event”. At this moment it is useful to include the fields that contain abiotic measurements and other information related to the events (e.g. sampling protocol).
+3.  **Normalise Events**  table and add a hierarchy if relevant.
+4.  **eMoF table**: Add the necessary columns to the eMoF table and put all the according values into one single column.
+
+In the next sub-chapters you will go through each step.
+
+#### What are the relevant columns?  
+_
+
+In the book on  [Field nomenclature](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070)  we've mapped the column names of our data set to DwC terms. This allows us to have a better overview of which columns belong to which table.
+
+If you need a reminder on the most relevant DwC fields per table you can find them  [here](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NTEzMzI4MCwxNTcxNjI5ODQ2LC0xMj
-MzMjQ0MTI5XX0=
+eyJoaXN0b3J5IjpbODg0MDAwMzI1LDE1NzE2Mjk4NDYsLTEyMz
+MyNDQxMjldfQ==
 -->
