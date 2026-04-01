@@ -850,8 +850,12 @@ Check the format/content of the fields:
 
 -   eventDate
 -   scientificName
-- 
+
+### Hands-on practice 4: Data standardisation - events and occurrences - solution
+
+The video below explains step by step how to standardise the dataset using Excel. You can also [download the solution here.](https://docs.google.com/spreadsheets/d/152OuOthfSbA123kLLfQ2Ou_ndJ3Y436vmQvv_mrdstI/export?format=xlsx)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDA3MTMyOTIsLTEyMzMyNDQxMjldfQ
-==
+eyJoaXN0b3J5IjpbMTU3MTYyOTg0NiwtMTIzMzI0NDEyOV19
 -->
