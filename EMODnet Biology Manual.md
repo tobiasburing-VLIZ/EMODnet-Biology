@@ -1173,22 +1173,23 @@ How do we capture all this information in the eMoF table? Let's have a look at a
 	<tr>
 		<td> <b> measurementType </td>
 		<td> <b>measurementValue&Unit</td>
-	</>
+	</tr>
 	<tr colspan=3>
 		<td>Gear/device type </td>
 		<td> Otter-Trawl Maireta System (OTMS) </td>
 		<td> Agassiz dredge </td>
-	
+	</tr>
+	<tr>
+		<td>Mesh size</td>
+		<td>12mm</td>
+		<td>12mm</td>
+	</tr>
+	<tr>
+		<td>Net horizontal opening</td>
+		<td></td>
+		<td></td>
 
 
-
-
-
-
-
-Mesh size | 12mm | 12mm
-
-Net horizontal opening
 
 12.7m
 
@@ -1206,6 +1207,6 @@ Trawling speed
 
 2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMjgxNDQxMSwxMjk1MjkyODYwLDE1Nz
-E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbLTE0NTc0MTE3NzUsMTI5NTI5Mjg2MCwxNT
+cxNjI5ODQ2LC0xMjMzMjQ0MTI5XX0=
 -->
