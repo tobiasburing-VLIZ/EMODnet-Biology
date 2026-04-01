@@ -928,12 +928,40 @@ The summarised workflow is as follows:
 In the next sub-chapters you will go through each step.
 
 #### What are the relevant columns?  
-_
 
 In the book on  [Field nomenclature](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070)  we've mapped the column names of our data set to DwC terms. This allows us to have a better overview of which columns belong to which table.
 
 If you need a reminder on the most relevant DwC fields per table you can find them  [here](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070).
+
+### Transformation workflow
+
+#### Creating the Occurrence table
+
+In the video below, you can see how to select the relevant columns of the Occurrence table. At this stage, it is helpful to include the measurements or fields that contain biological measurements related to the Occurrences (e.g. biomass).
+
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5091/Structure_occurrence1%20%281%29.mp4
+
+### Transformation workflow
+
+#### Creating the Event table
+
+In the video below, you can see how to select the relevant columns of the Event table. At this stage, it is helpful to include abiotic measurements (if available) and other information related to the sampling event (e.g. SamplingProtocol).
+
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5092/Structure_event1%20%281%29.mp4
+
+### Transformation workflow
+
+#### Normalising the Event table and adding a hierarchy
+
+To  [normalise](https://classroom.oceanteacher.org/mod/glossary/showentry.php?eid=393) the Event table, we will restructure it.
+
+As mentioned, the necessary fields for the Event table are: CollectionCode, EventDate, EventID, LocationID, DecimalLatitude, DecimalLongitude, minimumDepthInMeters, maximumDepthInMeters, SamplingProtocol.  
+By leaving ScientificName out of the selection, we are left with a table that contains many duplicates. We need to remove the duplicates to create a table with only  **unique Events**. We can do this by using the “[Remove duplicates](https://support.office.com/en-us/article/filter-for-unique-values-or-remove-duplicate-values-ccf664b0-81d6-449b-bbe1-8daaec1e83c2)” function in Excel:
+
+https://classroom.oceanteacher.org/pluginfile.php/76262/mod_book/chapter/5093/structure_event_normal1%20%281%29.mp4
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0MDAwMzI1LDE1NzE2Mjk4NDYsLTEyMz
-MyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbLTEyNDEzMTA3MzUsMTU3MTYyOTg0NiwtMT
+IzMzI0NDEyOV19
 -->
