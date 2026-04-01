@@ -1026,13 +1026,10 @@ Example of parameter standardisation using controlled vocabularies:
 Body length | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
 Length | [](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
 Length (mm) | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
-length_in_mm | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[  
-](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
-Length of specimen | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[  
-](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
-
- Note: although measurementType, measurementValue, and measurementUnit are free text fields, it is recommended to fill them in with the "preferred label" given by the BODC parameter.
+length_in_mm | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+Length of specimen | [http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX](https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)[](http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX)
+Note: although measurementType, measurementValue, and measurementUnit are free text fields, it is recommended to fill them in with the "preferred label" given by the BODC parameter.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzExNjQyOSwxMjk1MjkyODYwLDE1Nz
-E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbNDIzNzQxNTE3LDEyOTUyOTI4NjAsMTU3MT
+YyOTg0NiwtMTIzMzI0NDEyOV19
 -->
