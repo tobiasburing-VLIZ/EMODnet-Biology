@@ -799,6 +799,32 @@ The  [OBIS maptool](http://obis.org/maptool/)  allows you to draw the given line
 
 An  [Excel script](https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5084/LinestringsAndCentroidCoordinates.xlsx)  allows you to create the linestring and the centre coordinates, to calculate the coordinateUncertaintyInMeters by simply filling out the start and end coordinates.
 
+### Locations - General areas and regions - Polygons
+
+If the exact position is unknown, but only the region in which the sample was collected is known, the data might still be valuable and should be included in EMODnet Biology. You could add the name of the region in the field  **locality**. Then, you should look up this region in  [Marine Regions](http://www.marineregions.org/gazetteer.php?p=search). Marine regions will provide centre coordinates of the region, the coordinateUncertaintyInMeters, and the minimum and maximum longitude and latitude. With this information, you can build a bounding box polygon for the footprintWKT.
+
+The polygon should be formatted as follows: "POLYGON (([longitude point 1] [latitude point 1], [longitude point 2] [latitude poin 2], ..., [longitude point x] [latitude point x], [longitude point 1] [latitude point 1]))". Example: "POLYGON ((10.65674 42.77928, 10.50018 42.77121, 10.43152 42.62183, 10.75836 42.38087, 11.05225 42.48628, 10.91492 42.70262, 10.65674 42.77928))".
+
+Alternatively, if you know approximately where the sample was collected you may opt to draw your own polygon using the [OBIS maptool](http://obis.org/maptool/) as illustrated in the demo video below.
+
+![](https://img.youtube.com/vi/XB4rUYhb_ok/maxresdefault.jpg)
+
+Play Video
+
+If you are skilled in R, you can use these  [R tools](https://github.com/iobis/obistools#calculate-centroid-and-radius-for-wkt-geometries)  to calculate the centroid and radius for WKT linestrings and polygons.  
+No tool exists in Python to date.
+
+### Hands-on practice 3: Taxon Match Tool
+
+In [this Google spreadsheet,](https://docs.google.com/spreadsheets/d/1_uhGfnUKn-HG-Ek8qFr6q9vBklNI0nv3nuKxvZo5omg/export?format=xlsx) you can find a list of taxa that need to receive a scientificNameID. Match them with WoRMS using the [taxon match tool](http://marinespecies.org/aphia.php?p=match).
+
+Remember that the scientificName column should **only** contain the scientific name. The rest of the information should be split to other columns.  
+There are a number of taxa for which matching will be difficult. Draft your own comments about what actions you would undertake to get a scientificNameID for the cases do not match automatically.
+### Hands-on practice 3: Taxon Match Tool - input file
+
+So the first step you needed to undertake was to clean the names provided in the data file and split information into different columns. If you did this correctly, the file you created should [look like this.](https://docs.google.com/spreadsheets/d/1lImZ1ULVTd1fu4dPPL_UBl0_ApM5NzGOsIO4p66jpRc/export?format=xlsx)
+
+If you want you can redo the [taxon match](http://marinespecies.org/aphia.php?p=match) using this file (remove the first row as it's only informative) and check your solution below. Otherwise, you can _type_ _done_ in the out the text-box below, and the solution will also become available to you.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0MzgxNDk1LC0xMjMzMjQ0MTI5XX0=
+eyJoaXN0b3J5IjpbMjc3NTEwMjM3LC0xMjMzMjQ0MTI5XX0=
 -->
