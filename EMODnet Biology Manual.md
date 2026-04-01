@@ -1274,14 +1274,26 @@ Try and look for the appropriate vocabularies for the units in your dataset:
 
 With this last step, your dataset will be ready to publish! Paste the controlled vocabulary that you have found in the correspondent measurementUnitID fields.
 
-As you may have noticed, sometimes a suitable vocab term for your unit will not exist in P06, in these cases, you can either contact EMODnet Biology to liaise with BODC in order to add a new vocabulary for this term, or you can convert your measurements to a unit that exists (remember that BODC uses SI units - find more about SI units [here](https://www.nist.gov/pml/special-publication-330) ![wink](https://classroom.oceanteacher.org/theme/image.php/uniplay/core/1773842480/s/wink "wink")
+As you may have noticed, sometimes a suitable vocab term for your unit will not exist in P06, in these cases, you can either contact EMODnet Biology to liaise with BODC in order to add a new vocabulary for this term, or you can convert your measurements to a unit that exists (remember that BODC uses SI units - find more about SI units [here](https://www.nist.gov/pml/special-publication-330).
 
 **measurements and facts without units**
 
 Units are necessary to properly understand the values measured. However, on some occasions, you might have some measurements or facts that require no units to be fully understood, facts where the units are  [not applicable](http://vocab.nerc.ac.uk/collection/P06/current/XXXX/), [dimensionless](http://vocab.nerc.ac.uk/collection/P06/current/UUUU/) quantities, or units that have been deliberately  [not specified](http://vocab.nerc.ac.uk/collection/P06/current/USPC/)  such as in arbitrary units.
 
 As you can see if you have clicked in the previous links, controlled vocabulary terms exist to account for these cases and are therefore recommended to be used  when corresponds. BODC has also created a vocabulary term for  [not known](http://vocab.nerc.ac.uk/collection/P06/current/UKWN/)  units that are recommended to be used if we are certain that the units exist but we just do not know them. This information can be used when querying data and in Quality Control procedures.
+
+### Hands-on practice 6: Data standardisation - eMoF
+
+In this exercise, we will learn how to look for the appropriate BODC controlled vocabularies to populate the measurementTypeID, measurementValueID, and measurementUnitID in the eMoF table.
+
+Download the file [here](https://docs.google.com/spreadsheets/d/1rmWVQZw_5x_YWzYLreDAlRAo-toYZKGcs64Eht-Z4pU/export?format=xlsx).
+
+### Hands-on practice 6: Data standardisation - eMoF - solution
+
+Download the solution to this exercise [here](https://docs.google.com/spreadsheets/d/17p6z7_knVm2Nb3_FQJdHJgDvbX0Uwz8DG9OVEb9cEtU/export?format=xlsx)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0ODk0MzI2LDEyOTUyOTI4NjAsMTU3MT
-YyOTg0NiwtMTIzMzI0NDEyOV19
+eyJoaXN0b3J5IjpbMTkzMDcwNTM0MSwxMjk1MjkyODYwLDE1Nz
+E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
