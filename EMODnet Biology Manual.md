@@ -1659,8 +1659,6 @@ The date and the time at which the sampling event or the observation is stored i
 
 ISO 8601 dates can represent moments in time at different resolutions, as well as time intervals, which use “/” as a separator. Date and time are separated by “T”. Times can have a time zone indicator at the end. If this is not the case, then the time is assumed to be local time. When a time is UTC, a “Z” is added. Some examples of ISO 8601 dates are:
 
-[
-
 1973-02-28T15:25:00  
 2005-08-31T12:11+12  
 1993-01-26T04:39+12/1993-01-26T05:48+12  
@@ -2224,7 +2222,7 @@ The dataset already contains information on the sampling method. We know that tw
     
 
 How do we capture all this information in the eMoF table? Let's have a look at all the parameters that can be extracted from those sentences:
-<td></td>
+
 
 <table>
 	<tr>
@@ -2457,5 +2455,5 @@ Download the solution to this exercise [here](https://docs.google.com/spreadshee
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTQwOTk0MjVdfQ==
+eyJoaXN0b3J5IjpbMTY4NzEwODc4NSwtMTg1NDA5OTQyNV19
 -->
