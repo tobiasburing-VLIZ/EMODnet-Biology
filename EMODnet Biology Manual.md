@@ -655,9 +655,34 @@ By using WoRMS as its taxonomic backbone, EMODnet Biology gains access to all th
 
 If you would like more information on WoRMS, you can watch this online lecture:
 
-https://img.youtube.com/vi/r4kvls0pYmk/0.jpg
+[OBIS-INDEEP 25-28 Oct 2016 - Introduction to WoRMS. - YouTube](https://www.youtube.com/watch?v=r4kvls0pYmk&time_continue=1&source_ve_path=NzY3NTg&embeds_referring_euri=https%3A%2F%2Fclassroom.oceanteacher.org%2F&embeds_referring_origin=https%3A%2F%2Fclassroom.oceanteacher.org)
+
+### Taxonomy - WoRMS Taxon Match Tool: preparing an input file
+
+The WoRMS Taxon Match Tool works best if it's presented with clean names. For high efficiency, it is highly recommended to clean your file before presenting it to the taxon match tool.
+
+As explained in a  [previous section](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070), the main terms to store taxon-related data in the occurrence table are scientificName, scientificNameAuthorship, scientificNameID, kingdom, taxonRank, and identificationQualifier. For EMODnet Biology,  **the field scientificName should only contain the scientific name of the taxon**, other taxonomic information should be split to other columns such as identificationQualifier and scientificNameAuthor. Often the data provided in the name field also contains information related to the sex, lifestage, or size of the specimen. These should be stored in the eMoF table with dedicated terms and if applicable with a reference to a controlled vocabulary. Guidelines on how to correctly occupy the eMoF table will be discussed in the book  [Data standardisation - eMoF](https://classroom.oceanteacher.org/mod/book/view.php?id=24886).
+
+Sometimes there is uncertainty about which taxon is actually recorded. This is often expressed by  _.cf_  followed by the specificEpithet. e.g.  _Gadus_  cf.  _morhua_. In other cases, the person identifying might think the taxon is one of 2 different taxa and will store it as follows:  _Gadus morhua / macrocephalus_. The guideline of EMODnet Biology goes as follows: the scientificName with the taxonomic level at which there is certainty should be filled out. So, in both examples, the scientificName is filled out with  _Gadus_. The identificationQualifier will contain cf. _morhua_  and  _morhua / macrocephalus_  respectively.
+
+In some cases, the name provided is not a taxonomic name, but something else, like a functional group. As mentioned, the field scientificName should only contain scientific names and is a mandatory field. To solve the issue of e.g. functional groups in the name field, a taxon name should be provided instead. Again here, the taxon name that reaches the lowest taxonomic level and still fully covers all taxa implied by the provided name should be chosen. It's better to be overly cautious (and pick a high category taxon name - like animalia or biota) than to introduce errors. The non-taxon names that were originally provided can be stored in the field taxonRemarks.
+
+##### _Examples_
+
+The spreadsheet available via the link below shows some examples on how to structure your input file before presenting it to the Taxon Match Tool. The field scientificName is the field that is presented to the Taxon Match Tool, and the other columns are needed to add the cleaned data file. The column "Name as provided" is essential to keep in the taxon match file, as this will allow you to link the outcome of the Taxon Match Tool back to your data file.
+
+[View in Google spreadsheets](https://docs.google.com/spreadsheets/d/1_AKDG1jbPdC1LJ824cx1umMgcfC3b6owLsWmawBFXRc/edit?usp=sharing).
+
+### Taxonomy - WoRMS Taxon Match Tool: obtaining the LSIDs
+#### _Few taxon records_
+##### **Single search:**
+
+In case your data set only contains 2 or 3 taxa you can quite quickly get their LSIDs from using the  [search interface](http://marinespecies.org/aphia.php?p=search).
+
+The following video shows you how you use this search and where to find the LSID:
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzUxMzA4NDUsLTEyMzMyNDQxMjldfQ
+eyJoaXN0b3J5IjpbLTEwNjYxNTUzODUsLTEyMzMyNDQxMjldfQ
 ==
 -->
