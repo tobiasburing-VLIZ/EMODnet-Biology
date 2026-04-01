@@ -1216,7 +1216,72 @@ _**The steps we need to follow are shown in the following videos:**_
 
 Sampling instrument name:
 https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_type2.mp4?time=1590594965811
+
+Sampling device aperture length:
+https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_aperture_length.mp4?time=1590595100432
+Repeat these steps for the rest of the measurements.
+
+### Dealing with measurementValues
+
+##### Searching your concept
+
+You have now standardised all the measurement types, using controlled vocabularies from the P01 collection to populate the measurementTypeID field.
+
+In some cases, it is also possible to give a controlled vocabulary for the measurement values. In other cases, it is not. For example, in your dataset, you have numeric values for the abundance, biomass, etc. It does not make sense to have controlled vocabularies for the infinite possibilities offered by rational numbers (0.0005063291, 0.0000253165, etc.).
+
+Typically, you can provide controlled vocabularies for other measurement or fact such as gender/sex, life/development stage, or the sampling devices. Below is again the list with the most common collections that you can look at in order to find vocabularies to standardise the measurement values:
+
+-   [S11](http://vocab.nerc.ac.uk/collection/S11/current/)- Biological entity life stage terms
+-   [S10](http://vocab.nerc.ac.uk/collection/S10/current/)- BODC parameter semantic model biological entity gender terms
+-   [L05](http://vocab.nerc.ac.uk/collection/L05/current/)- SeaDataNet device categories
+-   [L22](http://vocab.nerc.ac.uk/collection/L22/current/)- SeaVoX Device Catalogue
+-   [C17](http://vocab.nerc.ac.uk/collection/C17/current/)- ICES Platform Codes
+
+Pro Tip: You can look for specific concepts within a collection by adding the collection code at the end of the URL of the NERC vocabulary search tool. For example:  [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/L22/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/L22/)
+
+As it was mentioned before, in some cases, the BODC concept you are looking for is not yet part of the collection. If that is the case, contact EMODnet Biology.
+
+##### Populating measurementValueID
+
+You have now found a controlled vocabulary for the Aggasiz dredge. You will use it to populate the measurementValueID in the eMoF table. The only thing to do is to paste the URI ([http://vocab.nerc.ac.uk/collection/L22/current/TOOL1252/](http://vocab.nerc.ac.uk/collection/L22/current/TOOL1252/)) into the measurementValueID field for all the records where measurementValue = Agassiz dredge.
+
+https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5101/emof_sampling_instrument.mp4
+
+Note: There is no adequate controlled vocabulary for Otter-Trawl Maireta System (OTMS). This means you cannot fill in measurementValueID for these records.
+
+### Dealing with measurementUnits
+
+##### Searching for your concept
+
+The last thing you need to do is to search for the standard vocabularies of the units of your measurements or facts. The collection where you need to look at is P06 (BODC units): [http://vocab.nerc.ac.uk/collection/P06/current/](http://vocab.nerc.ac.uk/collection/P06/current/)
+
+To search for a unit within this collection, remember you can use: [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/)
+
+Try and look for the appropriate vocabularies for the units in your dataset:
+
+-   kg/km2
+    
+-   N/km2
+    
+-   mm
+    
+-   m
+    
+-   knots
+    
+
+##### Populating measurementUnitID
+
+With this last step, your dataset will be ready to publish! Paste the controlled vocabulary that you have found in the correspondent measurementUnitID fields.
+
+As you may have noticed, sometimes a suitable vocab term for your unit will not exist in P06, in these cases, you can either contact EMODnet Biology to liaise with BODC in order to add a new vocabulary for this term, or you can convert your measurements to a unit that exists (remember that BODC uses SI units - find more about SI units [here](https://www.nist.gov/pml/special-publication-330) ![wink](https://classroom.oceanteacher.org/theme/image.php/uniplay/core/1773842480/s/wink "wink")
+
+**measurements and facts without units**
+
+Units are necessary to properly understand the values measured. However, on some occasions, you might have some measurements or facts that require no units to be fully understood, facts where the units are  [not applicable](http://vocab.nerc.ac.uk/collection/P06/current/XXXX/), [dimensionless](http://vocab.nerc.ac.uk/collection/P06/current/UUUU/) quantities, or units that have been deliberately  [not specified](http://vocab.nerc.ac.uk/collection/P06/current/USPC/)  such as in arbitrary units.
+
+As you can see if you have clicked in the previous links, controlled vocabulary terms exist to account for these cases and are therefore recommended to be used  when corresponds. BODC has also created a vocabulary term for  [not known](http://vocab.nerc.ac.uk/collection/P06/current/UKWN/)  units that are recommended to be used if we are certain that the units exist but we just do not know them. This information can be used when querying data and in Quality Control procedures.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDkxNTE0MSwxMjk1MjkyODYwLDE1Nz
-E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbOTc0ODk0MzI2LDEyOTUyOTI4NjAsMTU3MT
+YyOTg0NiwtMTIzMzI0NDEyOV19
 -->
