@@ -1139,7 +1139,59 @@ Once you have found the appropriate BODC parameters, you can use them in your eM
 https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5098/emof_type1.mp4
 
 The procedure would consist of copying the URI for each concept and pasting it into the measurementTypeID field for the records that correspond to that measurementType.
+
+### Dealing with measurementTypes: Abiotic measurements or facts
+
+Let's suppose that your data also contains abiotic measurements that were collected at the moment of sampling (e.g. salinity of the water body, temperature of the water body or sediment, sediment type, etc.).
+
+You can use the eMoF table to store these measurements by linking them to the correspondent EventID, the same way you did with the SamplingProtocol.
+
+You can use the Vocabulary search (or other search tools provided) to look for the appropriate [P01 BODC Parameter Usage Vocabulary](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P01/)  concept/parameter. For example:
+
+-   Temperature of the water body: search for "temperature%water%body"
+    
+-   Salinity of the water body with CTD: search for "salinity%CTD"
+    
+-   Measurements related to lithology (sediment characteristics): "lithology"
+### Dealing with measurementTypes: Sampling facts
+
+##### Searching your concept
+
+Finally, we also need to populate the measurementTypeID field for all the records in the eMoF table that refer to the sampling method.
+
+The dataset already contains information on the sampling method. We know that two types of sampling mechanisms were used:
+
+-   Gear: otter-trawl Maireta system (OTMS); The OTMS is a 1-warp benthic otter-trawl designed to work seamlessly on high-depth grounds: its stretch mesh size at the cod-end is 40mm, with an outer cover of 12mm, to allow retrieval of small-sized fractions of megafauna. The net total length is 25m, with a horizontal opening of 12.7m and a vertical opening of 1.4m. Trawls were conducted at 2.6 to 2.8 knots.
+    
+-   Gear: Agassiz dredge; The Agassiz dredge had a 2.5 m horizontal opening and 1.2 m vertical opening, a net mesh size of 12 mm, and was trawled at 2.0 knots.
+    
+
+How do we capture all this information in the eMoF table? Let's have a look at all the parameters that can be extracted from those sentences:
+
+**measurementType** | **measurementValue&Unit**
+--- | --- | --- 
+Gear/device type | Otter-Trawl Maireta System (OTMS) | Agassiz dredge
+--- | --- | ---
+Mesh size | 12mm | 12mm
+
+Net horizontal opening
+
+12.7m
+
+2.5m
+
+Net vertical opening
+
+1.4m
+
+1.2m
+
+Trawling speed
+
+2.7knots (average)
+
+2knots
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzE2NjYyMSwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbLTcxODE3MzE2NCwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
