@@ -1086,17 +1086,10 @@ There are a few tips that will help us decide which BODC vocab to use:
 -   If your fact is "Sex/gender of an organism", searching for "sex" in the  [BODC Vocabulary Search](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/) would result in 17 different collections. Let's say after a quick search you are hesitating between [http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/](http://vocab.nerc.ac.uk/collection/P01/current/ENTSEX01/) from the "P01 BODC Parameter Usage Vocabulary collection" and [http://vocab.nerc.ac.uk/collection/MVB/current/MVB000023/](http://vocab.nerc.ac.uk/collection/MVB/current/MVB000023/) from the "MVB Movebank Attribute Dictionary collection".  
     To assess which collection to use, look carefully at the title and definition of the collections to see which one of them relates the most to the type of data you are handling:
 
-**Title**
-
-**Definition**
-
-P01 BODC Parameter Usage Vocabulary
-
-_Terms built using the BODC parameter semantic model designed to describe individual measured phenomena. May be used to mark up sets of data such as a NetCDF array or spreadsheet column._
-
-MVB Movebank Attribute Dictionary
-
-_Terms used to describe on-animal sensor data stored in the Movebank database (movebank.org), including individual measurements (events), reference data (animals, tags, deployments) and studies._
+**Title** | **Definition**
+--- | ---
+P01 BODC Parameter Usage Vocabulary | _Terms built using the BODC parameter semantic model designed to describe individual measured phenomena. May be used to mark up sets of data such as a NetCDF array or spreadsheet column._
+MVB Movebank Attribute Dictionary | _Terms used to describe on-animal sensor data stored in the Movebank database (movebank.org), including individual measurements (events), reference data (animals, tags, deployments) and studies._
 
   
 Pro Tip: _Access the whole collection by using a URL of the type [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/)__{listid}/ -> [https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/)_
@@ -1124,7 +1117,29 @@ _**measurementValues**_
 _**measurementUnits**_
 
 -   [P06](http://vocab.nerc.ac.uk/collection/P06/current/)- Approved data storage units
+
+### Dealing with measurementTypes: Biotic measurements or facts
+
+##### Searching your concept
+
+We will provide you with a filtered list of P01 parameters that should be used for the biotic measurements (or facts) that your dataset contains (e.g. biomass, abundance,  sex/gender, life or development stage, etc.).
+
+To access the full list search for "biological%entity%specified%elsewhere" within the [P01 BODC Parameter Usage Vocabulary collection](https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P01/)
+
+As you can see, this is a search result using the BODC Vocabulary Search. We have searched for all the concepts that contain the free text: "biological entity specified elsewhere". In our case, the biological entity in question is specified in the Occurrence table, linked to the measurement via the OccurrenceID.
+
+The same search could have been performed using the [SDN Facet search tool](http://seadatanet.maris2.nl/bandit/browse_step.php?step=001biological%20entity%20specified%20elsewhere). The P01 collection that you will use to populate many of the measurementTypeIDs is quite interesting. Click on the following link if you want to know more about P01 BODC Parameter Usage Vocabulary  [context and semantic model](https://github.com/nvs-vocabs/P01).
+
+Now, look at the list and select the most appropriate parameter for our measurements "Count in sample", "abundance (N/km2)" and "Biomass (kg/km2)".
+
+##### Populating measurementTypeID
+
+Once you have found the appropriate BODC parameters, you can use them in your eMoF table as is shown in the following video:
+
+https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5098/emof_type1.mp4
+
+The procedure would consist of copying the URI for each concept and pasting it into the measurementTypeID field for the records that correspond to that measurementType.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODM2MzYzNCwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbLTE4NzE2NjYyMSwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
