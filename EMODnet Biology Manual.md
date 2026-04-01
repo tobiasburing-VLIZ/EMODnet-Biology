@@ -625,7 +625,39 @@ Play Video
 
 https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5075/Convert%20date%20to%20text.mp4
 
+### Common terms - basisOfRecord, occurrenceStatus
+
+##### _basisOfRecord_
+
+This term records the "specific nature" of the data record. In EMODnet Biology and OBIS it is used to explain on what type of evidence the claim of the occurrence of the taxon is based. This term is mandatory for IPT, which means that you need to assess the data set metadata and choose the most suited value. The most relevant options for EMODnet Biology are:
+
+-   **MaterialSample**: if the claim is based on sample specimen. Someone held the specimen closely and examined it to determine the taxon it belongs to. It is for specimens that were removed from the environment.
+-   **PreservedSpecimen**: when the sampled specimen is deposited in a collection. If this term is chosen then you should provide the institutionCode, collectionCode, and catalogNumber of the specimen. The institutionCode refers to the location where the specimen is kept, the collectionCode refers to the collection where it can be accessed and the catalogNumber should be the number of the specimen or the jar in which it can be accessed.
+-   **HumanObservation**: should be used for sightings of specimens. It is for specimens that were observed and again released.
+-   **MachineObservation**: For data from sensors (tracked or tagged specimens, c-pods,..). Specimens identified by machines (e.g. image recognition and DNA sequencing).
+-   **LivingSpecimen**: an intentionally kept/cultivated living specimen e.g. in an aquarium or culture collection.
+
+##### _occurrenceStatus_
+
+This mandatory term needs to be filled out with either "present" or "absent". If your data set only has presences, you will need to add the term occurrenceStatus and fill it with the value "present".
+
+### Taxonomy - Introduction to WoRMS and the link with EMODnet Biology
+
+The World Register of Marine Species (**WoRMS**) provides an authoritative and comprehensive list of names of marine organisms, including information on synonymy. The content of WoRMS is controlled by over 250 taxonomic editors. Each of these editors is considered expert for their assigned taxon group and its geographical area.
+
+The register includes only valid names; in other words, names that have been used to describe a taxon in a scientific paper. A species can have many different valid names if the species was described more than once as a species new to science, usually by a different author who was unaware that the species had already been described. These are called synonyms. All synonyms and the accepted names (the name that should be used for the species - usually the name associated with the first description of the species) are included in the register so that it can serve to standardise the names used in different datasets from different geographical areas at different time periods.
+
+Apart from taxonomic information, WoRMS can also store the known distribution area of a taxon, traits information (like the minimum and maximum length of adults), the functional group(s) a taxon belongs to, etc. All this additional information is also controlled by the taxonomic experts.
+
+When dealing with WoRMS, you may see many mentions of APHIA. APHIA is the name of the database in which all WoRMS data are stored. The APHIA database is also used to store some non-marine registers which are not included in the World Register of Marine Species.
+
+By using WoRMS as its taxonomic backbone, EMODnet Biology gains access to all the data stored by WoRMS. For this to be consistent and interoperable, all taxa included in a data set harvested by EMODnet Biology need to reference the Life Sciences Identifier (**LSID**) assigned to the taxon by WoRMS. This information should be stored in the field  **scientificNameID**. Names can be easily matched with their correct LSID by using the  [Taxon Match](https://www.marinespecies.org/aphia.php?p=match) tool of WoRMS.
+
+If you would like more information on WoRMS, you can watch this online lecture:
+
+https://img.youtube.com/vi/r4kvls0pYmk/0.jpg
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzMyNDQxMjldfQ==
+eyJoaXN0b3J5IjpbLTE4NzUxMzA4NDUsLTEyMzMyNDQxMjldfQ
+==
 -->
