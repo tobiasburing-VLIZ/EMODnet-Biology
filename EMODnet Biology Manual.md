@@ -875,10 +875,11 @@ In a next chapter, we will go through the workflow of standardising the content 
 <tbody>
 <tr>
 <td>Body length</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX">http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX</a></td>
+<t<a href="http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX">http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX</a></td>
+
 </tr></tbody></table>
 Length
-<a href="http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX"></a><a href="https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX">http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX</a>
+d><a href="http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX"></a><a href="https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX">http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX</a>
 
 
 Length (mm)
@@ -1923,7 +1924,7 @@ In a next chapter, we will go through the workflow of standardising the content 
 <tr>
 <td>Body length</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX">http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX</a></td>
-</tr>
+
 <tr>
 <td>Length</td>
 <td><a href="http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX"></a><a href="https://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX">http://vocab.nerc.ac.uk/collection/P01/current/OBSINDLX</a></td>
@@ -2091,259 +2092,273 @@ To assess which collection to use, look carefully at the title and definition of
 		<td> <b> measurementType </b></td>
 		<td> <b>measurementValue&amp;Unit</b></td>
 	</tr>
-	<tr colspan="3">
-		<td>Gear/device type </td>
-		<td> Otter-Trawl Maireta System (OTMS) </td>
-		<td> Agassiz dredge </td>
-	</tr>
-	<tr>
-		<td>Mesh size</td>
-		<td>12mm</td>
-		<td>12mm</td>
-	</tr>
-	<tr>
-		<td>Net horizontal opening</td>
-		<td>12.7m</td>
-		<td>2.5m</td>
-	</tr>
-	<tr>
-		<td>Net vertical opening</td>
-		<td>1.4m</td>
-		<td>1.2m</td>
-	</tr>
-		
-	<tr>
-		<td>Trawling speed</td>
-		<td>2.7knots (average)</td>
-		<td>2knots</td>
-	</tr>
-</tbody></table>
-<h5 id="populating-measurementtypeid-1">Populating measurementTypeID</h5>
-<p>After looking for all the different concepts, our table would look like:</p>
-<table>
-<thead>
-<tr>
-<th><strong>measurementType</strong></th>
-<th><strong>Label</strong></th>
-<th><strong>Concept URI</strong></th>
-<th><strong>measurementValue&amp;Unit</strong></th>
-<th>°</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Gear/device</td>
-<td>Sampling instrument name</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/">http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/</a></td>
-<td>Otter-Trawl Maireta System (OTMS)</td>
-<td>Agassiz dredge</td>
-</tr>
-<tr>
-<td>Mesh size</td>
-<td>Sampling net mesh size</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/">http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/</a></td>
-<td>12mm</td>
-<td>12mm</td>
-</tr>
-<tr>
-<td>Net horizontal opening</td>
-<td>Sampling device aperture length</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/">http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/</a></td>
-<td>12.7m</td>
-<td>2.5m</td>
-</tr>
-<tr>
-<td>Net vertical opening</td>
-<td>Sampling device aperture width</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/">http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/</a></td>
-<td>1.4m</td>
-<td>1.2m</td>
-</tr>
-<tr>
-<td>Trawling speed</td>
-<td>Speed of measurement platform relative to ground surface {speed over ground}</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/">http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/</a></td>
-<td>2.7knots (average)</td>
-<td>2knots</td>
-</tr>
-</tbody>
-</table><p><em><strong>The steps we need to follow are shown in the following videos:</strong></em></p>
-<p>Sampling instrument name:<br>
-<a href="https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_type2.mp4?time=1590594965811">https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_type2.mp4?time=1590594965811</a></p>
-<p>Sampling device aperture length:<br>
-<a href="https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_aperture_length.mp4?time=1590595100432">https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_aperture_length.mp4?time=1590595100432</a><br>
-Repeat these steps for the rest of the measurements.</p>
-<h3 id="dealing-with-measurementvalues">Dealing with measurementValues</h3>
-<h5 id="searching-your-concept-2">Searching your concept</h5>
-<p>You have now standardised all the measurement types, using controlled vocabularies from the P01 collection to populate the measurementTypeID field.</p>
-<p>In some cases, it is also possible to give a controlled vocabulary for the measurement values. In other cases, it is not. For example, in your dataset, you have numeric values for the abundance, biomass, etc. It does not make sense to have controlled vocabularies for the infinite possibilities offered by rational numbers (0.0005063291, 0.0000253165, etc.).</p>
-<p>Typically, you can provide controlled vocabularies for other measurement or fact such as gender/sex, life/development stage, or the sampling devices. Below is again the list with the most common collections that you can look at in order to find vocabularies to standardise the measurement values:</p>
-<ul>
-<li><a href="http://vocab.nerc.ac.uk/collection/S11/current/">S11</a>- Biological entity life stage terms</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/S10/current/">S10</a>- BODC parameter semantic model biological entity gender terms</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/L05/current/">L05</a>- SeaDataNet device categories</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/L22/current/">L22</a>- SeaVoX Device Catalogue</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/C17/current/">C17</a>- ICES Platform Codes</li>
-</ul>
-<p>Pro Tip: You can look for specific concepts within a collection by adding the collection code at the end of the URL of the NERC vocabulary search tool. For example:  <a href="https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/L22/">https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/L22/</a></p>
-<p>As it was mentioned before, in some cases, the BODC concept you are looking for is not yet part of the collection. If that is the case, contact EMODnet Biology.</p>
-<h5 id="populating-measurementvalueid">Populating measurementValueID</h5>
-<p>You have now found a controlled vocabulary for the Aggasiz dredge. You will use it to populate the measurementValueID in the eMoF table. The only thing to do is to paste the URI (<a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL1252/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL1252/</a>) into the measurementValueID field for all the records where measurementValue = Agassiz dredge.</p>
-<p><a href="https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5101/emof_sampling_instrument.mp4">https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5101/emof_sampling_instrument.mp4</a></p>
-<p>Note: There is no adequate controlled vocabulary for Otter-Trawl Maireta System (OTMS). This means you cannot fill in measurementValueID for these records.</p>
-<h3 id="dealing-with-measurementunits">Dealing with measurementUnits</h3>
-<h5 id="searching-for-your-concept">Searching for your concept</h5>
-<p>The last thing you need to do is to search for the standard vocabularies of the units of your measurements or facts. The collection where you need to look at is P06 (BODC units): <a href="http://vocab.nerc.ac.uk/collection/P06/current/">http://vocab.nerc.ac.uk/collection/P06/current/</a></p>
-<p>To search for a unit within this collection, remember you can use: <a href="https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/">https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/</a></p>
-<p>Try and look for the appropriate vocabularies for the units in your dataset:</p>
-<ul>
-<li>
-<p>kg/km2</p>
-</li>
-<li>
-<p>N/km2</p>
-</li>
-<li>
-<p>mm</p>
-</li>
-<li>
-<p>m</p>
-</li>
-<li>
-<p>knots</p>
-</li>
-</ul>
-<h5 id="populating-measurementunitid">Populating measurementUnitID</h5>
-<p>With this last step, your dataset will be ready to publish! Paste the controlled vocabulary that you have found in the correspondent measurementUnitID fields.</p>
-<p>As you may have noticed, sometimes a suitable vocab term for your unit will not exist in P06, in these cases, you can either contact EMODnet Biology to liaise with BODC in order to add a new vocabulary for this term, or you can convert your measurements to a unit that exists (remember that BODC uses SI units - find more about SI units <a href="https://www.nist.gov/pml/special-publication-330">here</a>.</p>
-<p><strong>measurements and facts without units</strong></p>
-<p>Units are necessary to properly understand the values measured. However, on some occasions, you might have some measurements or facts that require no units to be fully understood, facts where the units are  <a href="http://vocab.nerc.ac.uk/collection/P06/current/XXXX/">not applicable</a>, <a href="http://vocab.nerc.ac.uk/collection/P06/current/UUUU/">dimensionless</a> quantities, or units that have been deliberately  <a href="http://vocab.nerc.ac.uk/collection/P06/current/USPC/">not specified</a>  such as in arbitrary units.</p>
-<p>As you can see if you have clicked in the previous links, controlled vocabulary terms exist to account for these cases and are therefore recommended to be used  when corresponds. BODC has also created a vocabulary term for  <a href="http://vocab.nerc.ac.uk/collection/P06/current/UKWN/">not known</a>  units that are recommended to be used if we are certain that the units exist but we just do not know them. This information can be used when querying data and in Quality Control procedures.</p>
-<h3 id="hands-on-practice-6-data-standardisation---emof">Hands-on practice 6: Data standardisation - eMoF</h3>
-<p>In this exercise, we will learn how to look for the appropriate BODC controlled vocabularies to populate the measurementTypeID, measurementValueID, and measurementUnitID in the eMoF table.</p>
-<p>Download the file <a href="https://docs.google.com/spreadsheets/d/1rmWVQZw_5x_YWzYLreDAlRAo-toYZKGcs64Eht-Z4pU/export?format=xlsx">here</a>.</p>
-<h3 id="hands-on-practice-6-data-standardisation---emof---solution">Hands-on practice 6: Data standardisation - eMoF - solution</h3>
-<p>Download the solution to this exercise <a href="https://docs.google.com/spreadsheets/d/17p6z7_knVm2Nb3_FQJdHJgDvbX0Uwz8DG9OVEb9cEtU/export?format=xlsx">here</a></p>able&gt;
-<h5 id="populating-measurementtypeid-1">Populating measurementTypeID</h5>
-<p>After looking for all the different concepts, our table would look like:</p>
+	<tr colspan="3"tr colspan="3"
+Contributing datasets to EMODnet Biology – Manual
+==============
+
+Brief overview of EMODnet Biology project, data management, data flow and international connections.
+
+# 1. Introduction to EMODnet and EMODnet Biology
+
+## What is EMODnet Biology
+
+**EMODnet: the European Marine Observation and Data Network**
+
+The European Marine Observation and Data Network (EMODnet) is a network of organisations that work together to observe the sea, process the data according to international standards and make that information freely available as interoperable data layers and data products.
+
+EMODnet provides access to European marine data across seven discipline-based themes:
 
 <table>
-<thead>
+  <tr>
+	  <td>
+		  Bathymetry
+	 </td>
+    <td> <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/bathymetry.png?time=1588942317496"  alt="1" width = 360px height = 360px >
+    </td>
+  </tr> 
+   <tr>
+  <td>Biology
+  </td>
+	  <td><img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/biology.png" alt="3" width = 360px height = 360px>
+	  </td>
+ </tr>
 <tr>
-<th><strong>measurementType</strong></th>
-<th><strong>Label</strong></th>
-<th><strong>Concept URI</strong></th>
-<th><strong>measurementValue&amp;Unit</strong></th>
-<th>°</th>
-</tr>
-</thead>
-<tbody>
+	<td>
+	Human Activities
+	</td>
+	 <td>
+	   <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/human_activities.png" align="right" alt="4" width = 360px height = 360px>
+	  </td>
+ </tr>
+ <tr>
+      <td>
+      Chemistry
+      </td>
+      <td>
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/chemistry.png" align="right" alt="4" width = 360px height = 360px>
+	  </td>
+ </tr>
 <tr>
-<td>Gear/device</td>
-<td>Sampling instrument name</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/">http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/</a></td>
-<td>Otter-Trawl Maireta System (OTMS)</td>
-<td>Agassiz dredge</td>
-</tr>
-<tr>
-<td>Mesh size</td>
-<td>Sampling net mesh size</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/">http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/</a></td>
-<td>12mm</td>
-<td>12mm</td>
-</tr>
-<tr>
-<td>Net horizontal opening</td>
-<td>Sampling device aperture length</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/">http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/</a></td>
-<td>12.7m</td>
-<td>2.5m</td>
+      <td>
+      Geology
+      </td>
+      <td>
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/geology.png" align="right" alt="4" width = 360px height = 360px>
+      </td>
 </tr>
 <tr>
-<td>Net vertical opening</td>
-<td>Sampling device aperture width</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/">http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/</a></td>
-<td>1.4m</td>
-<td>1.2m</td>
+      <td>
+      Physics
+      </td>
+      <td>
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/physics.png" align="right" alt="4" width = 360px height = 360px>
+      </td>
 </tr>
 <tr>
-<td>Trawling speed</td>
-<td>Speed of measurement platform relative to ground surface {speed over ground}</td>
-<td><a href="http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/">http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/</a></td>
-<td>2.7knots (average)</td>
-<td>2knots</td>
+      <td>
+      Seabed Habitats
+      </td>
+      <td>
+       <img src="https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5048/seadbed_habitats.png" align="right" alt="4" width = 360px height = 360px>
+      </td>
 </tr>
-</tbody>
-</table><p><em><strong>The steps we need to follow are shown in the following videos:</strong></em></p>
-<p>Sampling instrument name:<br>
-<a href="https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_type2.mp4?time=1590594965811">https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_type2.mp4?time=1590594965811</a></p>
-<p>Sampling device aperture length:<br>
-<a href="https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_aperture_length.mp4?time=1590595100432">https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_aperture_length.mp4?time=1590595100432</a><br>
-Repeat these steps for the rest of the measurements.</p>
-<h3 id="dealing-with-measurementvalues">Dealing with measurementValues</h3>
-<h5 id="searching-your-concept-2">Searching your concept</h5>
-<p>You have now standardised all the measurement types, using controlled vocabularies from the P01 collection to populate the measurementTypeID field.</p>
-<p>In some cases, it is also possible to give a controlled vocabulary for the measurement values. In other cases, it is not. For example, in your dataset, you have numeric values for the abundance, biomass, etc. It does not make sense to have controlled vocabularies for the infinite possibilities offered by rational numbers (0.0005063291, 0.0000253165, etc.).</p>
-<p>Typically, you can provide controlled vocabularies for other measurement or fact such as gender/sex, life/development stage, or the sampling devices. Below is again the list with the most common collections that you can look at in order to find vocabularies to standardise the measurement values:</p>
-<ul>
-<li><a href="http://vocab.nerc.ac.uk/collection/S11/current/">S11</a>- Biological entity life stage terms</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/S10/current/">S10</a>- BODC parameter semantic model biological entity gender terms</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/L05/current/">L05</a>- SeaDataNet device categories</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/L22/current/">L22</a>- SeaVoX Device Catalogue</li>
-<li><a href="http://vocab.nerc.ac.uk/collection/C17/current/">C17</a>- ICES Platform Codes</li>
-</ul>
-<p>Pro Tip: You can look for specific concepts within a collection by adding the collection code at the end of the URL of the NERC vocabulary search tool. For example:  <a href="https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/L22/">https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/L22/</a></p>
-<p>As it was mentioned before, in some cases, the BODC concept you are looking for is not yet part of the collection. If that is the case, contact EMODnet Biology.</p>
-<h5 id="populating-measurementvalueid">Populating measurementValueID</h5>
-<p>You have now found a controlled vocabulary for the Aggasiz dredge. You will use it to populate the measurementValueID in the eMoF table. The only thing to do is to paste the URI (<a href="http://vocab.nerc.ac.uk/collection/L22/current/TOOL1252/">http://vocab.nerc.ac.uk/collection/L22/current/TOOL1252/</a>) into the measurementValueID field for all the records where measurementValue = Agassiz dredge.</p>
-<p><a href="https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5101/emof_sampling_instrument.mp4">https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5101/emof_sampling_instrument.mp4</a></p>
-<p>Note: There is no adequate controlled vocabulary for Otter-Trawl Maireta System (OTMS). This means you cannot fill in measurementValueID for these records.</p>
-<h3 id="dealing-with-measurementunits">Dealing with measurementUnits</h3>
-<h5 id="searching-for-your-concept">Searching for your concept</h5>
-<p>The last thing you need to do is to search for the standard vocabularies of the units of your measurements or facts. The collection where you need to look at is P06 (BODC units): <a href="http://vocab.nerc.ac.uk/collection/P06/current/">http://vocab.nerc.ac.uk/collection/P06/current/</a></p>
-<p>To search for a unit within this collection, remember you can use: <a href="https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/">https://www.bodc.ac.uk/resources/vocabularies/vocabulary_search/P06/</a></p>
-<p>Try and look for the appropriate vocabularies for the units in your dataset:</p>
-<ul>
-<li>
-<p>kg/km2</p>
-</li>
-<li>
-<p>N/km2</p>
-</li>
-<li>
-<p>mm</p>
-</li>
-<li>
-<p>m</p>
-</li>
-<li>
-<p>knots</p>
-</li>
-</ul>
-<h5 id="populating-measurementunitid">Populating measurementUnitID</h5>
-<p>With this last step, your dataset will be ready to publish! Paste the controlled vocabulary that you have found in the correspondent measurementUnitID fields.</p>
-<p>As you may have noticed, sometimes a suitable vocab term for your unit will not exist in P06, in these cases, you can either contact EMODnet Biology to liaise with BODC in order to add a new vocabulary for this term, or you can convert your measurements to a unit that exists (remember that BODC uses SI units - find more about SI units <a href="https://www.nist.gov/pml/special-publication-330">here</a>.</p>
-<p><strong>measurements and facts without units</strong></p>
-<p>Units are necessary to properly understand the values measured. However, on some occasions, you might have some measurements or facts that require no units to be fully understood, facts where the units are  <a href="http://vocab.nerc.ac.uk/collection/P06/current/XXXX/">not applicable</a>, <a href="http://vocab.nerc.ac.uk/collection/P06/current/UUUU/">dimensionless</a> quantities, or units that have been deliberately  <a href="http://vocab.nerc.ac.uk/collection/P06/current/USPC/">not specified</a>  such as in arbitrary units.</p>
-<p>As you can see if you have clicked in the previous links, controlled vocabulary terms exist to account for these cases and are therefore recommended to be used  when corresponds. BODC has also created a vocabulary term for  <a href="http://vocab.nerc.ac.uk/collection/P06/current/UKWN/">not known</a>  units that are recommended to be used if we are certain that the units exist but we just do not know them. This information can be used when querying data and in Quality Control procedures.</p>
-<h3 id="hands-on-practice-6-data-standardisation---emof">Hands-on practice 6: Data standardisation - eMoF</h3>
-<p>In this exercise, we will learn how to look for the appropriate BODC controlled vocabularies to populate the measurementTypeID, measurementValueID, and measurementUnitID in the eMoF table.</p>
-<p>Download the file <a href="https://docs.google.com/spreadsheets/d/1rmWVQZw_5x_YWzYLreDAlRAo-toYZKGcs64Eht-Z4pU/export?format=xlsx">here</a>.</p>
-<h3 id="hands-on-practice-6-data-standardisation---emof---solution">Hands-on practice 6: Data standardisation - eMoF - solution</h3>
-<p>Download the solution to this exercise <a href="https://docs.google.com/spreadsheets/d/17p6z7_knVm2Nb3_FQJdHJgDvbX0Uwz8DG9OVEb9cEtU/export?format=xlsx">here</a></p>
-<h2 id="seabed-habitats-data-type">Seabed Habitats data type</h2>
-<h3 id="why-share-habitat-data">Why share habitat data?</h3>
-<p>There is a demonstrable need to provide access to combined species and habitat data to ensure low-friction aggregation at the larger spatial scales, facilitating international interoperability between disparate benthic habitat data holdings, and improving interoperability and standardisation in increasingly common holistic benthic surveys, capturing both species and habitat information (among other data types).</p>
-<p>Leveraging developments to include additional “measurements and facts” within the Darwin Core Archive standard for biodiversity data exchange allowed the EMODnet Seabed Habitats and Biology teams to develop guidance and current best practices to support other organisations and individuals wishing to publish habitat and species biodiversity data together.</p>
-<p>The information provided in this topic adheres to the guidance available in the document 'A standard approach to structuring classified habitat data using the Darwin Core Extended Measurement or Fact Extension available via the  <a href="https://emodnet.ec.europa.eu/sites/emodnet.ec.europa.eu/files/public/EMODnet_SeaBed-Habitats_guidance-on-submitting-habitat-point-data-to-eurobis_v12.pdf">link</a>.</p>
-<h3 id="vocabularies-describing-habitats">Vocabularies describing habitats</h3>
-<p>Any habitat occurrence may be, and often is, described under more than one classification system, where such classifications cover different aspects of the habitat, are used for specific reporting requirements, or cover a different geographic scope (e.g. National and European classification systems).</p>
-<p>This situation is handled by creating separate eMoF records for each habitat description while referring to the same id for the relevant event. If habitats were directly translated between classification systems (for example using a lookup table), this should be recorded in the measurementMethod field of the derived habitat, noting the measurementID of the source habitat if possible.</p>
-<p>Table. Example of how the eMoF table is populated in the context of submitting habitat data.</p>
-<p><strong>IN DEVELOPMENT</strong></p>
-<h3 id="list-of-recommended-vocabularies">List of recommended vocabularies</h3>
-<p>The table below includes details of the recommended vocabularies that should be used when sharing habitats data.</p>
-<p>Currently EMODnet Biology only supports the standardized habitat vocabularies of the EIONET and NERC habitat vocabulary collections although non-supported habitat vocabulary collections can potentially be used if they apply.</p>
-<p><strong>IN  DEVELOPMENT</strong></p>
-<h2 id="dealing-with-archaeology-data">4. Dealing with archaeology data</h2>
+<tr>
+      <td>
+      </td>
+      <td>
+       <img src="" align="right" alt="" width = 0px height = 0px>
+      </td>
+      </tr>
+</table>
 
+More about EMODnet: [https://emodnet.ec.europa.eu/en](http://www.emodnet.eu/ "http://www.emodnet.eu/")
+
+### EMODnet Biology: unlocking European Marine Biodiversity Data
+
+EMODnet Biology aims to provide a single access point to European Marine Biodiversity Data and Products, by assembling individual datasets from various sources and processing them into interoperable data products for assessing the environmental state of ecosystems and sea basins. It is built upon the World Register of Marine Species and the European Ocean Biodiversity Information System.
+
+**Specific objectives of EMODnet Biology:**
+
+-   Provide public access to search, download, and viewing tools for data, metadata, and data products of marine species occurring in European marine waters;
+-   Create specific biological data products to illustrate the temporal and geographic variability of occurrences and abundances of marine algae, benthos, birds, fish, mammals, phytoplankton, reptiles, and zooplankton species, with a priority to develop those required for support management, policy, planning, and education;
+-   Improve harmonization of differing methodologies and strategies for data management under common protocols, data formats, and quality control procedures (by adopting INSPIRE standards);
+-   Ensure consistent distribution of data by making use of relevant open web services for various user applications;
+-   Provide tools for spatial, temporal, and taxonomic queries.
+
+More about EMODnet Biology:  [https://emodnet.ec.europa.eu/en/biology](http://www.emodnet-biology.eu/ "http://www.emodnet-biology.eu/")
+
+
+### EMODnet Biology data policy
+
+The EMODnet Biology data portal provides free and unrestricted access to data on temporal and spatial distribution of marine species and species traits from all European regional seas.
+
+The consortia partners should make data available using one of the following 3  Creative Commons licenses.  
+
+-   CC-0
+-   CC-BY
+-   CC-BY-NC
+
+Learn more: [https://creativecommons.org/licenses/](https://creativecommons.org/licenses/ "https://creativecommons.org/licenses/")
+
+### EMODnet Biology data flow
+
+You have read that EMODnet Biology is built upon the European Ocean Biodiversity Information System (EurOBIS), but  **what does that mean?**
+
+The following  [presentation](https://classroom.oceanteacher.org/pluginfile.php/76238/mod_book/chapter/5051/EMODnetBiology_DataFlow.ppsx?time=1591192574159)  explains how data flows toward EMODnet Biology and how it relates to other biodiversity data systems, such as the Ocean Biodiversity Information System.
+
+
+## FAIR Principles in EMODnet Biology
+
+### FAIR Principles
+
+The [FAIR Guiding Principles for scientific data management and stewardship](http://www.nature.com/articles/sdata201618)  were first published in 2016 in the  _Scientific Data_  journal. They put specific emphasis on enhancing the ability of machines to automatically find and use the data, in addition to supporting its reuse by individuals.
+
+The principles apply to both data and metadata and are:
+
+1.  Findable
+2.  Accessible
+3.  Interoperable
+4.  Reusable
+
+This  [presentation](https://classroom.oceanteacher.org/pluginfile.php/76240/mod_book/chapter/5052/EMODnetBiology_FAIR.ppsx)  briefly introduces these principles but more information can be found in Wilkinson, M., Dumontier, M., Aalbersberg, I.  _et al._  The FAIR Guiding Principles for scientific data management and stewardship.  _Sci Data_  **3,** 160018 (2016).  [https://doi.org/10.1038/sdata.2016.18](https://doi.org/10.1038/sdata.2016.18)
+
+### DOIs and ORCIDs
+
+EMODnet Biology encourages the use of Digital Object Identifiers (DOI) in datasets. This is however only done when they are requested by the data providers. A DOI is a static, permanent link to the data, allowing it to be citable, and more visible. It also provides evidence for data claims and the citations can contribute to scholarly credit for the data creators. More detailed information can be found in the book "[Data harvest and DOIs](https://classroom.oceanteacher.org/mod/book/view.php?id=24902)" under the EMODnet Biology data harvesting section of this course.
+
+Within EMODnet Biology we also encourage our data providers to use Open Researcher and Contributor Identifier ([ORCID)](https://orcid.org/)  as it is persistent, unique digital identifier used to disambiguate researchers from one another.
+
+You might have noticed that an increasing number of journals and publishing companies are requesting DOIs and ORCIDs when submitting documents for publication.
+
+## EMODnet Biology data management
+### Overview of EMODnet Biology data management process
+
+EMODnet Biology's data management is composed by three main steps:
+
+-   Data description
+-   Data processing
+-   Data publication
+
+![Data_management](https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5054/Data_management.PNG)
+
+### Dataset description: metadata
+
+There are many advantages to providing good metadata:
+
+-   It is necessary to make sure your dataset can be found (discoverability)
+-   It is needed to indicate the origin of the dataset and who to contact
+-   It makes your dataset easy to use and understand
+-   It helps potential users to decide whether the dataset is useful or not without the need to download it first
+-   It informs potential users of data restrictions
+-   It informs on how potential users are to cite the dataset upon use in publications
+
+In EMODnet Biology we keep a  [catalogue](http://www.emodnet-biology.eu/data-catalog?module=dataset&show=search) with metadata records for all the datasets, including those available through the portal and those not yet available.
+
+Later on in the course, you will learn more about how to provide good-quality metadata.
+### Data processing: formatting the data according to EMODnet Biology (OBIS) standards (I)
+
+Both EMODnet Biology and OBIS (and GBIF) rely on  Darwin Core Archive (DwC-A), the standard for publishing biodiversity data. This standard determines the way the data will be structured (i.e. number of tables we need to provide), and the number, name, and content of the fields for each of these tables.
+
+EMODnet Biology and OBIS, unlike GBIF, also use the BODC vocabularies to standardize parameters not covered by DwC. These vocabularies are part of one of DwC's extensions, the DwC OBIS-ENV format.  
+
+![Fortunately, the charging one has been solved now that we've all standardized on mini-USB. Or is it micro-USB? Shit.](https://www.explainxkcd.com/wiki/images/6/60/standards.png)
+(by [xkcd](https://xkcd.com/))
+### Data processing: formatting the data according to EMODnet Biology (OBIS) standards (II)
+
+We can think of the data processing as three main blocks, each of them with their own specific characteristics:
+
+-   **Data structure**: the conceptual data model of the Darwin Core Archive is a “[star schema](https://image.slidesharecdn.com/day4agbifiptv5modified-160713085446/95/gbif-bifa-mentoring-day-4a-gbif-ipt-july-2016-6-638.jpg?cb=1468400139)” with a core table in the center of the star and extension tables radiating out of the center. In practice, EMODnet Biology and OBIS use a subset of 1 to 3 tables to represent the data. In most cases, we will use the three tables.
+    -   Event (core) table: to store sample and/or observation information (time, location, depth, event hierarchy).
+    -   Occurrence table: to store occurrence details (taxonomy, identification, organismID).
+    -   Extended Measurements or Facts (eMoF) table: to store sampling information and additional biological and/or abiotic measurements.
+-   **Field nomenclature**: the field names of each of the 3 tables have to follow the Darwin Core  [terminology](http://rs.tdwg.org/dwc/terms/index.htm#occurrenceindex). There is a minimum number of fields required per table.
+-   **Content**: besides the field names, the content, or the data itself, has to follow certain standards. For example, the date-related fields have to be ISO 8601 compliant.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5057/processing_blocks.PNG)
+
+Later in the course each of these blocks will be explained in detail with exercises.
+
+### Data processing: structure of the data
+
+Marine biological data often includes measurements related to habitat features, such as physical and chemical variables of the environment, and biotic measurements (such as body size, counts, abundance and biomass, etc) as well as details regarding the nature of the sampling or observation methods, equipment and sampling effort. In order to capture all this information, EMODnet Biology and OBIS make use of three tables of the DwC star schema.
+
+In this case, the sampling event (Event table) is the central entity, which is linked to two extensions: the Occurrence and eMoF (extended Measurements or Facts) tables. This schema is often referred to as  [OBIS Event Core or OBIS-ENV](http://www.obis.org/manual/dataformat/).
+
+The three tables are related via the eventID and the occurrenceID.
+
+-   The eMoF table is used in combination with the Event Core and the Occurrence table to capture sampling information, abiotic and biotic measurements
+-   The occurrenceID is used to link biotic measurements in the eMoF table with the Occurrence table
+-   The eventID links the eMoF table to the Event Core
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76242/mod_book/chapter/5058/event_core.PNG)
+
+### Data processing: field nomenclature
+
+The field names of each of the 3 tables have to follow the  [Darwin Core terminology](http://rs.tdwg.org/dwc/terms/index.htm#occurrenceindex). There are many DwC terms but not all of them are required for EMODnet Biology. In the "Data processing" book the section "[Most relevant DwC terms](https://classroom.oceanteacher.org/mod/book/view.php?id=24869&chapterid=5070)" provides detailed information on the terms used in each table.
+
+### Data processing: content standards
+
+As was mentioned before, the content or the data itself has to follow certain standards and use certain vocabularies. Here are some examples:
+
+-   Date-related fields have to be  [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)  compliant: e.g. 2018-03-02 [YYYY-MM-DD]
+-   Latitude and longitude have to be in decimal degrees and referenced to the WGS84 datum
+
+An overview of the required format for the content of the different fields is available  [here](http://www.eurobis.org/data_formats).
+
+Later on in the course, you will learn how to populate the fields that require a specific format:
+
+-   EventID and OccurrenceID.
+    
+-   Taxonomic information:  [LSID](https://en.wikipedia.org/wiki/LSID)
+    
+    -   ____Gadus morhua____ standardized to:  urn:lsid:marinespecies.org:taxname:322691  
+        
+
+-   Other parameters (eMoF table):  [BODC-NERC controlled vocabulary](https://www.bodc.ac.uk/resources/products/web_services/vocab/).
+    
+    -   Biomass per g dry weight; dry weight biomass; biomass (g dry weight); etc... can be standardized to:  Dry weight biomass (in assayed sample) of biological entity specified elsewhere ([http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/)](http://vocab.nerc.ac.uk/collection/P01/current/ODRYBM01/)
+### Data publication
+
+Once your dataset fully complies with the EMODnet Biology standards, the next step will be to publish it. If you remember the EMODnet Biology data flow, the dataset will be first published in EurOBIS, from where it will flow to EMODnet Biology, LifeWatch, OBIS, and, finally GBIF.
+
+There are different options available to get your data published in EMODnet Biology. The preferred option is to set an IPT instance (Integrated Publishing Toolkit), an open-source software tool that is used to publish and share biodiversity datasets through the GBIF network. There is a specific module on the course about publishing your data with IPT.
+
+##### DOIs
+
+Another aspect you might consider is to assign a DOI to your dataset. To meet the growing demand for dataset **traceability** and **citability**, VLIZ collaborates with [**DataCite**](https://datacite.org/) to provide the scientific community the opportunity to formally publish their datasets by assigning **Digital Object Identifiers** (DOIs).
+
+Learn more about why and how to assign a DOI to your dataset  [here](http://www.vliz.be/en/publish).
+
+# 2. Metadata
+## Metadata in EMODnet Biology
+### Introduction to metadata
+
+Metadata is often defined as data about the data. It means describing your datasets in a structured way so that your data can be found and understood. EMODnet Biology considers receiving good metadata essential for the following reasons:
+
+-   Metadata facilitates data reuse and sharing: it ensures data are more easily interpreted, analysed, and processed by the data originator and others. Missing relevant metadata hinders the use of the data. It also enables datasets that were designed for a single purpose to be reused for other purposes
+-   Metadata is a way of organising electronic resources, making them discoverable
+-   Metadata is essential for interoperability: it enables understanding of the data by humans and machines
+
+In EMODnet Biology we keep a  [catalogue](http://www.emodnet-biology.eu/data-catalog?module=dataset&show=search) with metadata records for all the datasets available through the portal and some that are not yet available.
+### The EMODnet Biology Catalogue
+
+All EMODnet Biology datasets are described in the  [EMODnet Biology Catalogue](https://www.eurobis.org/imis?module=dataset&extfrm=1). The catalogue is part of a larger metadata system, the Integrated Marine Information System ([IMIS](http://www.vliz.be/en/integrated-marine-information-system)). As IMIS is hosted by Flanders Marine Institute (VLIZ), it is focused on Flanders and supplemented by the scientific output of projects involving VLIZ. It contains metadata about all people, institutes, publications, projects, and datasets that are about or involved in marine science and links these different modules together.
+
+This means that if you want to submit a dataset to EMODnet Biology, the following metadata records will need to be created in the EMODnet Catalogue:
+
+-   A  **dataset**  metadata record: A record containing all the metadata for your dataset. When the data have been made available this record will include a link to where the data can be downloaded from. For example:  [https://www.eurobis.org/imis?module=dataset&dasid=4355](https://www.eurobis.org/imis?module=dataset&dasid=4355)  
+    
+-   Metadata records for all  **people**  who contributed to the dataset and should be  acknowledged  in the metadata record. For example:  [https://www.vliz.be/en/imis?module=person&persid=7528](https://www.vliz.be/en/imis?module=person&persid=7528)
+-   Metadata records for all  **institutes**  who contributed to the dataset and should be  acknowledged  in the metadata record. For example:  [http://www.vliz.be/en/data-catalog?module=institute&insid=36](https://www.vliz.be/en/imis?module=institute&insid=36)
+-   Metadata records for all  **publications** based on or describing the dataset. For example:  [https://www.vliz.be/en/imis?module=ref&refid=243062](https://www.vliz.be/en/imis?module=ref&refid=243062)
+
+Please note that all these records are interlinked, which allows for easy discovery of the scientific output of an institute or a data provider.
+
+#### Creating and editing EMODnet catalogue records
+
+The content of the EMODnet catalogue is managed and edited solely by the EMODnet Data management team. To create a dataset record in the EMODnet catalogue, we require you to fill in this  [excel template file](https://classroom.oceanteacher.org/pluginfile.php/76244/mod_book/chapter/5063/Emodnet_Metadata_Template.xlsx?time=1591193709544)  and email it to  [bio@emodnet-biology.eu](mailto:b%69o@e%6d%6f%64n%65%74-%62i%6f%6c%6f%67%79.eu).
+
+If you find an error in your metadata record, you can report these to us directly through the  [ report an error in this record ]  button at the top of each metatada record, or via email to  [bio@emodnet-biology.eu](mailto:%62%69%6f@%65%6d%6f%64%6
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjUxNDY4MzQzXX0=
+-->
