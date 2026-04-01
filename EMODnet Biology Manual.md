@@ -1209,27 +1209,14 @@ After looking for all the different concepts, our table would look like:
 Gear/device | Sampling instrument name | [http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/](http://vocab.nerc.ac.uk/collection/P01/current/NMSPINST/) | Otter-Trawl Maireta System (OTMS) | Agassiz dredge
 Mesh size | Sampling net mesh size | [http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/](http://vocab.nerc.ac.uk/collection/P01/current/MSHSIZE1/) | 12mm | 12mm
 Net horizontal opening | Sampling device aperture length | [http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHHGHT1/) | 12.7m | 2.5m
+Net vertical opening | Sampling device aperture width | [http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/) | 1.4m | 1.2m
+Trawling speed | Speed of measurement platform relative to ground surface {speed over ground} | [http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/](http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/) | 2.7knots (average) | 2knots
 
-Net vertical opening
+_**The steps we need to follow are shown in the following videos:**_
 
-Sampling device aperture width
-
-[http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/](http://vocab.nerc.ac.uk/collection/P01/current/MTHWDTH1/)
-
-1.4m
-
-1.2m
-
-Trawling speed
-
-Speed of measurement platform relative to ground surface {speed over ground}
-
-[http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/](http://vocab.nerc.ac.uk/collection/P01/current/APSAZZ01/)
-
-2.7knots (average)
-
-2knots
+Sampling instrument name:
+https://classroom.oceanteacher.org/pluginfile.php/76266/mod_book/chapter/5100/emof_type2.mp4?time=1590594965811
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDI2OTA3MiwxMjk1MjkyODYwLDE1Nz
+eyJoaXN0b3J5IjpbLTQ2MDkxNTE0MSwxMjk1MjkyODYwLDE1Nz
 E2Mjk4NDYsLTEyMzMyNDQxMjldfQ==
 -->
