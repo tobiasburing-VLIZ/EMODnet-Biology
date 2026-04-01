@@ -718,7 +718,87 @@ Make sure to use dollar signs to fix the rows and columns in the second argument
 
 In the following video, we create a worksheet with unique taxon names, submit it to the WoRMS taxon matching service, and add the matched IDs back to our source data using VLOOKUP:
 
+https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5079/Large%20datasets%20match%20%281%29.mp4
+
+### Taxonomy - WoRMS Taxon Match Tool: the incredible return
+
+The Taxon Match Tool returns a file which includes additional information for each taxa that was matched with WoRMS. The fields of relevance that are returned are: Match type, LSID, ScientificName, Kingdom, and isMarine. In the file below, you find the outcome of an example taxon match.
+
+[View in Google spreadsheets](https://docs.google.com/spreadsheets/d/14L4q5GuchW2frU4wMxf5hDUcGMtuK_ehC-AQcKCsZhs/edit?usp=sharing).
+
+**Match type**: This field specifies how precise the match with WoRMS is. “Exact” means that the name in the data file and in WoRMS are exactly the same. If there was no match possible this field remains empty. Values "near_1", "near_2", and "near_3" indicate how many letters difference there are between the name in WoRMS and the name in your data file. Assessing these values seems common sense, but should still be carefully done. Usually, "near_1" indicates a spelling mistake and can reasonably reliably be considered the same taxon (but you should still check!). Matches with type “near_3” should be treated with great caution and should always be checked with the original source or person that identified the taxon. The “phonetic” type indicates that the spelling of the name in the data file and in WoRMS sound the same when spoken, which explains the spelling variations.
+
+**ScientificName**: This is the scientific name of the taxon as it is recorded in WoRMS. For types with “near” matches, this field should be compared with the original scientific name to see if it's possible that this is indeed the name that was meant.
+
+**Authority**: If your dataset contains the author of the taxon name, you should check if the Taxon Match Tool returned the same name, especially for the near matches.
+
+**Kingdom**: All scientific names returned by the taxon match belong to a kingdom. Check if these correspond with the kingdoms you expected; check if there are no animals in a phytoplankton dataset, or fungi in a fish dataset, etc.
+
+**isMarine / isBrackish**: WoRMS only contains taxa that a taxonomic editor verified as marine or brackish. However, the Taxon Match Tool matches with the APHIA database and can also return matches with non-marine taxa. Checking whether the taxon match returns a marine or brackish taxon is therefore very relevant if your dataset only contains marine taxa. Mismatches can be explained in two ways: 1) the taxon was misidentified in your dataset, 2) the environment is wrongly recorded in WoRMS. Keep in mind that the definition of a marine taxon entails the taxon’s dependency on the marine environment for at least one part of its life cycle; a pigeon that was spotted flying over the ocean is not considered a marine taxon.
+
+**LSID**: This is what is needed to fill out the DwC field  **scientificNameID**. Using the scientificNameID, EMODnet Biology and OBIS can access all information associated with the taxon, including the accepted scientificName, the taxonomy, distribution, and species traits.
+
+### Taxonomy - Which information should be included in the dataset for EMODnet?
+
+WoRMS only contains valid names; names that have been described in a scientific publication and that will stay available. However, the status of a taxon name itself can change; a taxon name that is considered accepted today may be considered a junior synonym (and thus not accepted) of another taxon name tomorrow. It's also possible that names that are considered synonyms today may be considered different taxa tomorrow. The only way to keep up with these changes is to provide a link to WoRMS and use the taxonomic information from WoRMS at the moment you assess the data. Therefore, it’s important to use the  **LSID of the match**  for the field scientificNameID, and not the LSID of the scientificName_accepted.
+
+For the same reason, the original name as provided in your dataset should be used to populate the field scientificName. If you are not the party that generated the data, you  **should not correct spelling** **v****ariations **without the originator's consent****, as this would reduce the traceability to the original data source and limit the possibility of identifying possible incorrectly added scientificNameID's. Similarly, you  **do not add the authority, nor any other DwC classification fields**  (kingdom, class, taxonRank) that are returned to you by the Taxon Match Tool. These classification fields should only be filled out if the same information was also provided in the original source dataset.
+
+So, in conclusion: Use the incredible return of the Taxon Match Tool  **to verify**  the matches with WoRMS, and use  **only the LSID**  of the matched name to populate the DwC field scientificNameID.
+### Taxonomy - What if a taxon did not match with WoRMS?
+
+#### _Ambiguous matches_
+
+It occurs that different authors used the same name to describe different species (homonyms). As we’ve seen, in these cases the tool returns the message that the match was ambiguous. To decide which of the different LSID's should be used, the name of the authority should be checked. If the authority is not included in the data set, it can be found in the determination guide that was used during the identification of the taxa in the data set. If the authority is not available, the classification should be checked; if for example you are working on a fish data set and one match is a polychaete and the other one is a fish, you know the fish match is the correct one. Another way to check which of the ambiguous matches is correct is the known distribution of the taxa can be consulted in WoRMS or OBIS.  
+If the data set you are analysing is not your own data set, you should always verify your assumptions with your provider and or ask them to check the determination guide for the authority.
+
+Given these different ambiguous matches, you should  **not blindly choose** the occurring accepted name as the correct name. In many cases, the accepted name might most likely be correct, but there is no certainty.
+
+#### _Non-marine taxa_
+
+If the WoRMS taxon did not find a match, it's possible that the taxon you need is a freshwater or a terrestrial taxon.  
+These cases can be checked using the Interim Register of Marine and Non-marine Genera (IRMNG) matching services, which are available through  [https://www.irmng.org/](http://www.irmng.org/). The IRMNG aims to classify all known genera according to their environment. Matching a taxon with this register will inform you whether all species of the genus occur exclusively in a marine, brackish, freshwater, terrestrial environment, or in a combination of these 4 environments.
+
+-   If the IRMNG lets you know that the taxon you looked for occurs in a marine or brackish environment, you should send this taxon name to  [info@marinespecies.org](mailto:%69%6e%66%6f@ma%72%69n%65%73p%65%63%69%65%73.%6frg). This way the WoRMS data management team can contact the relevant taxonomic editor and check whether the taxon can be added to WoRMS.
+-   If the IRMNG lets you know that the taxon you looked for occurs exclusively in a freshwater or terrestrial environment, you should double-check this in your data set. Is it possible for a non-marine species to occur at the mentioned location? You might need to consult your data provider and check if the specimen has not been misidentified. If the data provider claims the taxon actually is marine (i.e. there was a mistake in the IRMNG), you should contact  [info@marinespecies.org](mailto:i%6ef%6f@%6d%61%72%69ne%73%70e%63i%65%73%2e%6f%72%67). This way the responsible IRMNG taxonomic editor can assess whether the information in the IRMNG needs to be changed and whether the taxon should be added to WoRMS.
+
+Note: make sure to keep the environment flag ticked when performing an IRMNG taxon match.
+
+#### _Is it a valid taxon?_
+
+Quite often the scientific names of datasets submitted to EMODnet Biology contain spelling variations, or simply invalid names (names that have not been published in the literature). When both WoRMS and IRMNG do not provide a match, you should check whether the taxon exists in other registers. The easiest way to do this is by simply searching for the taxon name in Google. When this results in 20 hits or less (maybe even referring to your data source), it’s likely that there is something wrong with the taxon name and you should check with your data provider if they actually meant another taxon name. If the Google search shows that the taxon exists in other registers such as the ones listed below, you should contact  [info@marinespecies.org](mailto:%69%6e%66o@m%61%72%69%6e%65%73%70%65c%69%65%73%2e%6f%72%67). This way the WoRMS data management team can check whether the taxon can be added to WoRMS.
+
+Examples of trustworthy registers:
+
+-   Catalogue of Life – CoL
+-   Integrated Taxonomic Information System – ITIS
+-   Pan-European Species-directories Infrastructure – PESI
+-   International Plant Names Index – IPNI
+-   Global Names Index - GNI
+
+Developing a tool to check WoRMS taxa versus other registers has been a Belgian Lifewatch project and is available here:  [https://www.lifewatch.be/data-services](http://www.lifewatch.be/data-services), under Select Webservices -  **taxon match services**.
+
+### Locations - Exact positions
+
+In case the event has an exact position, the coordinates can be stored in the fields  **decimalLatitude**  and  **decimalLongitude**. The field  **coordinateUncertaintyInMeters**  can then be used to store the uncertainty associated to the coordinates themselves (e.g. the error of the GPS reading).
+
+These fields (decimalLatitude, decimalLongitude) are mandatory fields. They should contain the geographic latitude and longitude (in decimal degrees), using the spatial reference system EPSG:4326 (WGS84), and the number of decimals should be appropriate for the level of uncertainty related to the precision of the measuring device (this is also reflected in the field coordinateUncertaintyInMeters). Regarding decimalLatitude, positive values are north of the equator, negative values are south of the equator. All values lie between -90 and 90, inclusively. Regarding decimalLongitude, positive values are east of the Greenwich prime meridian, negative values are west of the Greenwich prime meridian. All values lie between -180 and 180, inclusively.
+
+The field  **locationID**  can be used to store an identifier for monitoring stations.  
+The field  **locality**  can be used to store a textual location or a description of where the sample was taken.
+
+### Locations - Start and end positions - Linestrings
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5084/trawling.png)In cases where it is not possible to provide an exact position, (e.g. when a sample is collected by trawling along a straight line), it’s recommended to store the start and end positions of the sampling event (in this case the trawl) as a linestring in the field  **footprintWKT**. The fields  **decimalLatitude**  and  **decimalLongitude**  are still mandatory, but they can be filled out with the centre point of the trawl. The value in  **coordinateUncertaintyInMeters**  will then represent the distance from the centre to the start or end coordinates.
+
+The linestring should be formatted as follows: "LINESTRING ([start-longitude] [start-latitude], [end-longitude] [end-latitude])". Example: "LINESTRING (2.80151 51.28597, 2.61749 51.53950)".
+
+The  [OBIS maptool](http://obis.org/maptool/)  allows you to draw the given linestring on a map after which it will return to you the centre point coordinates and the radius you need to fill out in the field coordinateUncertaintyInMeters.
+
+![](https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5084/linesting.png)
+
+An  [Excel script](https://classroom.oceanteacher.org/pluginfile.php/76253/mod_book/chapter/5084/LinestringsAndCentroidCoordinates.xlsx)  allows you to create the linestring and the centre coordinates, to calculate the coordinateUncertaintyInMeters by simply filling out the start and end coordinates.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2Njc2MTc3NSwtMTIzMzI0NDEyOV19
+eyJoaXN0b3J5IjpbNzE0MzgxNDk1LC0xMjMzMjQ0MTI5XX0=
 -->
